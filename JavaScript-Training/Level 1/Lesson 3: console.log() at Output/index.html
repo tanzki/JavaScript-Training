@@ -7,65 +7,82 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <section>
-      <article>
-                <h2>Lesson 3 — console.log() at Output</h2>
+    <h1>JavaScript Output Practice</h1>
+    <ul>
+      <li><p id="name"></p></li>
+      <li><p id="age"></p></li>
+      <li><p id="career"></p></li>
+    </ul>
 
-        <h3><b>Exercise 1</b> — Gamit ang Browser Console</h3>
-        <p>
-          <b>Goal:</b> Makapagpatakbo ng unang JavaScript code.
-        </p>
-        <ol>
-          <li>Buksan ang Google Chrome..</li>
-          <li>Pumunta sa kahit anong webpage.</li>
-          <li>Pindutin ang F12.</li>
-          <li>Piliin ang Console tab.</li>
-          <li>I-type ang code sa ibaba.</li>
-        </ol>
-        
-        <h3><b>Exercise 2</b> — Multiple output</h3>
-        <p>
-          <b>Goal:</b> Makapag-display ng maraming outputs.
-        </p>
-        <p>Gumawa ng JavaScript code na magpapakita ng sumusunod:</p>
-        <ul>
-          <li>Gumamit ng apat na console.log().</li>
-          <li>Isang statement para sa bawat line.</li>
-          <li>Siguraduhing tama ang spelling at punctuation.</li>
-        </ul>
+    <script>
+      let developerName = "Tanzki";
+      let developerAge = 35;
+      let developerCareer = "Full Stack Developer";
 
-        <h3><b>Exercise 3</b> — JavaScript introduction</h3>
-        <p>
-          <b>Goal:</b>Makagawa ng sariling JavaScript introduction.
-        </p>
-        <p>
-          Gumawa ng JavaScript code na magpapakita ng:
-        </p>
+      document.getElementById("name").textContent = "Name: " + developerName;
+      document.getElementById("age").textContent = "Age: " + developerAge;
+      document.getElementById("career").textContent =
+        "Career: " + developerCareer;
 
-        <h3><b>Challenge 1:</b> My First JavaScript Program</h3>
-        <p>
-          Gumawa ng program sa lesson1.js na nagpapakita ng sumusunod na
-          impormasyon:
-        </p>
-        <ol>
-          <li>Gumamit lamang ng console.log().</li>
-          <li>Bawat output ay dapat nasa sariling statement.</li>
-          <li>- Puwede kang gumamit ng sarili mong profile information.</li>
-        </ol>
+      console.table([
+        {
+          name: "Tanzki",
+          age: 35,
+          career: "Full Stack Developer",
+        },
+        {
+          name: "Alex",
+          age: 28,
+          career: "Web Developer",
+        },
+        {
+          name: "Tin",
+          age: 30,
+          career: "Software Developer",
+        },
+      ]);
+    </script>
 
-        <p><b>Challenge:</b> Your First Developer Message:</p>
-        <p>Gumawa ng sariling welcome message na may minimum na 7 lines.</p>
-        <p>Dapat kasama ang:</p>
-        <ul>
-          <li>Your name.</li>
-          <li>Your operating system.</li>
-          <li>Your code editor.</li>
-          <li>Your programming language.</li>
-          <li>Your current level.</li>
-          <li>Your learning goal.</li>
-          <li>A motivational message.</li>
-        </ul>
-      </article>
-    </section>
+    <h3>Exercise 1 — Basic Console Output</h3>
+
+    <p>File: exercise-01.html</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng complete HTML Document</li>
+      <li>
+        Gumamit ng <i>console.log()</i> para mag-display ng limang messages
+      </li>
+      <li>
+        Gumamit ng <i>console.log()</i> para sa dalawang information messages
+      </li>
+      <li>
+        Maglagay ng heading sa HTML page na
+        <i>MY JavaScript Console Practice</i>.
+      </li>
+      <li>I-test sa Chrome Console.</li>
+    </ol>
+
+    <p>Expected messages na ikaw ang bubuo:</p>
+    <ul>
+      <li>Welcome message</li>
+      <li>Your name</li>
+      <li>Your age</li>
+      <li>Your dream career.</li>
+      <li>Your learning goal.</li>
+    </ul>
+
+    <h3>Exercise 2 — Warning and Error Messages</h3>
+
+
+    <pre>
+      &lt;script&gt;
+        console.log("My Name: Tanzki");
+        console.log("My Age: 35");
+        console.log("My Skill Level: Beginner");
+        console.log("My Dream Career: Full Stack Developer");
+        console.log("Reason: I want to build web applications.")
+      &lt;/script&gt;
+    </pre>
   </body>
 </html>
