@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Lesson 2</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Paglalagay ng JavaScript sa HTML</h1>
+
+    <h3>Exercise 1 — Inline JavaScript</h3>
+
+    <p>
+      Gumawa ng sariling files sa VS Code. Huwag munang kopyahin ang solution
+      mula sa akin.
+    </p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng HTML webpage.</li>
+      <li>Maglagay ng heading na Inline JavaScript Practice.</li>
+      <li>Gumawa ng button.</li>
+      <li>Gumamit ng onclick.</li>
+      <li>Kapag na-click ang button, dapat magpakita ng alert message.</li>
+    </ol>
+
+    <pre>
+      &lt;h1&gt;Inline JavaScript Practice&lt;/h1&gt;
+      &lt;button onclick="alert('Hello World!')"&gt;Alert Button&lt;/button&gt;
+    </pre>
+
+    <h3>Inline JavaScript Practice</h3>
+
+    <button onclick="alert('Hello World!')">Alert Button</button>
+
+    <h3>Exercise 2 — Internal JavaScript</h3>
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng HTML webpage.</li>
+      <li>Gumawa ng button na may ID na myButton.</li>
+      <li>Ilagay ang JavaScript sa internal <i>&lt;script&gt;</i> tag.</li>
+      <li>Gamitin ang document.getElementById().</li>
+      <li>Gumamit ng addEventListener().</li>
+      <li>Kapag na-click ang button, dapat magpakita ng alert message.</li>
+      <li>Mag-display rin ng message sa Console.</li>
+    </ol>
+
+    <pre>
+      &lt;h1&gt;Internal JavaScript Practice&lt;/h1&gt;
+      &lt;button id="myButton"&gt;Alert Buttin&lt;/button&gt;
+
+      &lt;script&gt;
+      document.getElementById("myButton").addEventListener("click", function () {
+        alert("Hi! My name is Tanzki and I Love To CODE!");
+        console.log("Hi! My name is Tanzki and I Love To CODE!");
+      });
+      &lt;/script&gt;
+    </pre>
+
+    <h3>Internal JavaScript Practice</h3>
+    <button id="myButton">My Button Practice</button>
+
+    <script>
+      document
+        .getElementById("myButton")
+        .addEventListener("click", function () {
+          alert("Hi! My name is Tanzki and I Love To CODE!");
+          console.log("Hi! My name is Tanzki and I Love To CODE!");
+        });
+    </script>
+
+    <h3>Exercise 3 — External JavaScript</h3>
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng <i>index.html</i>.</li>
+      <li>Gumawa ng <i>js folder</i>.</li>
+      <li>Gumawa ng <i>script.js</i> sa loob ng js folder.</li>
+      <li>Ikonekta ang JavaScript gamit ang tamang file path.</li>
+      <li>Gumamit ng <i>defer</i>.</li>
+      <li>Gumawa ng button.</li>
+      <li>Kapag na-click ang button, magpakita ng alert.</li>
+      <li>Mag-display ng tatlong messages sa Console.</li>
+    </ol>
+
+    <pre>
+      Exercise-03/index.html
+      HTML Code:
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;JavaScript Connection Test&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;External JavaScript Practice&lt;/h1&gt;
+        
+        &lt;button id="clickMe"&gt;Click Me!&lt;/button&gt;
+
+      &lt;script src="js/script.js" defer&gt;&lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+      
+      Exercise-03/js/script.js
+      JavaScript Code:
+      document.getElementById("clickMe").addEventListener("click", function () {
+          alert("Button Clicked!");
+          console.log("First message:");
+          console.log("Second message:");
+          console.log("Third message:");
+      });
+    </pre>
+
+    <h3>External JavaScript Practice</h3>
+
+    <button id="clickMe">Click Me!</button>
+
+    <h3>FINAL CODING CHALLENGE</h3>
+
+    <p><b>Challenge: JavaScript Connection Testing System</b></p>
+    <p>
+      Gumawa ng mini website na susubok kung tama ang coonction ng HTML at
+      JavaScript.
+    </p>
+
+    <p>Requirements:</p>
+    <p>
+      <b>HTML <i>(index.html)</i></b>
+    </p>
+    <ul>
+      <li>Page title: JavaScript Connection Test</li>
+      <li>Heading: JavaScript Connection Testing System</li>
+      <li>Paragraphna napapaliwanag ng project.</li>
+      <li>Button na may ID na <i>testButton</i>.</li>
+      <li>External JavaScript connection</li>
+      <li>Gumamit ng <i>defer</i>.</li>
+    </ul>
+    <p>
+      <b>JavaScript<i>(apps.js)</i></b>
+    </p>
+    <ul>
+      <li>Mag-display ng limang messages sa <i>Console</i>.</li>
+      <li>Gumamit ng <i>document.getElementbyID()</i>.</li>
+      <li>Gumamit ng <i>addEventListener</i></li>
+      <li>Kapag na-click ang button. mag-display ng <i>alert</i>.</li>
+      <li>
+        Mag-display ng confirmation message sa Console kapag na-click ang button
+      </li>
+    </ul>
+
+    <p><b>Additional Challeng</b></p>
+    <ol>
+      <li>Test JavaScript Connection</li>
+      <li>Test Button event</li>
+    </ol>
+    <p>Dapat magkaiba ang behavior ng dalawang buttons.</p>
+
+    <pre>
+      Challenge/index.html
+      HTML Code:
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;JavaScript Connection Test&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+      &lt;h1&gt;JavaScript Connection Testing System&lt;/h1&gt;
+      
+      &lt;p&gt;
+        Ang page na ito ay ginawa para subukan ang pagkakonekta ng html file sa JavaScript file.
+      &lt;/p&gt;
+
+      &lt;button id="testButton"&gt;Test JavaScript Connection&lt;/button&gt;
+      &lt;button id="eventButton"&gt;Test Button Event&lt;/button&gt;
+
+      &lt;script src="js/script.js" defer&gt;&lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+
+      Challenge/js/script.js
+      JavaScript Code:
+      console.log("Message 1: Nakakonekta na ang app.js.");
+      console.log("Message 2: Gumagana ang defer.");
+      console.log("Message 3: Na-load na ang buong HTML bago tumakbo ang script.");
+      console.log("Message 4: Handa nang tumanggap ng click events.");
+      console.log("Message 5: Matagumpay ang JavaScript connection test!");
+
+      document.getElementById("testButton").addEventListener("click", function() {
+          alert("Test Button Clicked!");
+          console.log("Connection Successful.");
+      });
+
+      document.getElementById("eventButton").addEventListener("click", function() {
+          alert("Event Button Clicked!");
+          console.log("Event Function Successful.");
+      });
+    </pre>
+
+    <h3>External JavaScript Practice</h3>
+    <h1>JavaScript Connection Testing System</h1>
+
+    <p>
+      Ang page na ito ay ginawa para subukan ang pagkakonekta ng html file sa
+      JavaScript file.
+    </p>
+
+    <button id="testButton">Test JavaScript Connection</button>
+    <button id="eventButton">Test Button Event</button>
+
+    <p>Mini Quiz: Q1:B Q2:C Q3:A Q4:C Q5:A Q6:B Q7:C</p>
+  </body>
+</html>
