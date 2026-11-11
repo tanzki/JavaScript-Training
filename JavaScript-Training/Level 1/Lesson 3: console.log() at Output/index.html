@@ -4,45 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Lesson 3</title>
-    <script src="script.js" defer></script>
+    
   </head>
   <body>
     <h1>JavaScript Output Practice</h1>
-    <ul>
-      <li><p id="name"></p></li>
-      <li><p id="age"></p></li>
-      <li><p id="career"></p></li>
-    </ul>
-
-    <script>
-      let developerName = "Tanzki";
-      let developerAge = 35;
-      let developerCareer = "Full Stack Developer";
-
-      document.getElementById("name").textContent = "Name: " + developerName;
-      document.getElementById("age").textContent = "Age: " + developerAge;
-      document.getElementById("career").textContent =
-        "Career: " + developerCareer;
-
-      console.table([
-        {
-          name: "Tanzki",
-          age: 35,
-          career: "Full Stack Developer",
-        },
-        {
-          name: "Alex",
-          age: 28,
-          career: "Web Developer",
-        },
-        {
-          name: "Tin",
-          age: 30,
-          career: "Software Developer",
-        },
-      ]);
-    </script>
-
+    
     <h3>Exercise 1 — Basic Console Output</h3>
 
     <p>File: exercise-01.html</p>
@@ -72,17 +38,276 @@
       <li>Your learning goal.</li>
     </ul>
 
+    <pre>
+      Exercise-01/index.html
+      HTML Code:
+
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;JavaScript Console Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;My JavaScript Console Practice&lt;/h1&gt;
+        &lt;p&gt;Open the Chrome Console (F12) to show all the messages.&lt;/p&gt;
+
+      &lt;script&gt;
+        console.log("Welcome: Hi my name is Tanzki! and I am a beginner in JavaScript.");
+        console.log("Name: Tanzki");
+        console.log("Age: 35");
+        console.log("Dream career: To be a Full-Stack Web Developer");
+        console.log("Learning goal: To learn JavaScript and become a professional web developer.");
+      &lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+
     <h3>Exercise 2 — Warning and Error Messages</h3>
 
+    <p>File: exercise-02.html</p>
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng complete HTML document.</li>
+      <li>Gumamit ng dalawang <i>console.log()</i>.</li>
+      <li>Gumamit ng dalawang <i>console.warn()</i>.</li>
+      <li>Gumamit ng dalawang <i>console.error()</i>.</li>
+      <li>Gumamit ng isang <i>console.info()</i>.</li>
+      <li>
+        Maglagay ng heading sa webpage na <i>JavaScript Message Testing</i>.
+      </li>
+    </ol>
+
+    <p>
+      Layunin: Makilala mo ang pagkakaiba ng normal messages. wanings, at errors
+      sa Chrome Console.
+    </p>
 
     <pre>
+      Exercise-02.html
+      HTML Code:
+
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;JavaScript  Message Testing&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;JavaScript Message Testing&lt;/h1&gt;
+
       &lt;script&gt;
-        console.log("My Name: Tanzki");
-        console.log("My Age: 35");
-        console.log("My Skill Level: Beginner");
-        console.log("My Dream Career: Full Stack Developer");
-        console.log("Reason: I want to build web applications.")
+        console.log("Console Log Message 1");
+        console.log("Console Log Message 2");
+        
+        console.warn("console.warn Message 1");
+        console.warn("console.warn Message 2");
+        
+        console.error("console.error Message 1");
+        console.error("console.error Message 2");
+
+        console.info("console.info Message 1");
       &lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
     </pre>
+
+    <h3>Exercise 3 - HTML Output and Console Table</h3>
+
+    <p>File: exercise-03.html</p>
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng heading na <i>My Developer Profile</i>.</li>
+      <li>
+        Magpakita ng <i>Name, Age, Skill Level, at Dream Career</i> sa HTML
+        page.
+      </li>
+      <li>Gumamit ng <i>JavaScript variables</i> para sa impormasyon.</li>
+      <li>
+        Gumamit ng <i>document.getElementById()</i> at <i>textContent</i>.
+      </li>
+      <li>
+        Gumamit ng <i>console.log()</i> para ipakita ang developer information.
+      </li>
+      <li>Gumamit ng <i>console.table()</i> para mag-display ng data.</li>
+      <li>Siguraduhing parehong gumagana ang HTML output at Console output.</li>
+    </ol>
+
+    <pre>
+      Exercise-03.html
+      HTML Code:
+      &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;JavaScript  Message Testing&lt;/title&gt;
+        &lt;/head&gt;
+      &lt;body&gt;
+
+          &lt;h1&gt;My Developer Profile&lt;/h1&gt;
+
+          &lt;p&gt;Name: Tanzki&lt;/p&gt;
+          &lt;p&gt;Age: 35&lt;/p&gt;
+          &lt;p&gt;Skill Level: Beginner&lt;/p&gt;
+          &lt;p&gt;Dream Career: Full Stack Developer&lt;/p&gt;
+
+        &lt;script&gt;
+          let name = "Tanzki";
+          let age = 35;
+          let skillLevel = "Beginner";
+          let dreamCareer = "Full Stack Developer";
+
+          document.getElementById("name").textContent = "Name: " + name;
+          document.getElementById("age").textContent = "Age: " + age;
+          document.getElementById("skillLevel").textContent =
+            "Skill Level: " + skillLevel;
+          document.getElementById("dreamCareer").textContent =
+            "Dream Career: " + dreamCareer;
+
+          console.log("Name: " + name);
+          console.log("Age: " + age);
+          console.log("Skill Level: " + skillLevel);
+          console.log("Dream Career: " + dreamCareer);
+
+          console.table([
+            {
+              Name: name,
+              Age: age,
+              Skill_Level: skillLevel,
+              Dream_Career: dreamCareer,
+            },
+          ]);
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+
+    <h1>My Developer Profile</h1>
+
+    <p>Name: Tanzki</p>
+    <p>Age: 35</p>
+    <p>Skill Level: Beginner</p>
+    <p>Dream Career: Full Stack Developer</p>
+
+    <h3>Final Coding Challenge — Developer Information Dashboard</h3>
+
+    <p>Project folder: lesson-03-challenge</p>
+    <p>Gumawa ng isang simpleng Developer Information Dashboard.</p>
+    <p>Requirements:</p>
+    <p><b>A. HTML Requirements</b></p>
+    <ul>
+      <li>Heading: Developer Information Dashboard</li>
+      <li>Paragraph: Welcome to my JavaScript learning journey!</li>
+      <li>Maglagay ng mga HTML elements para sa:</li>
+      <ul>
+        <li>Name</li>
+        <li>Age</li>
+        <li>Country</li>
+        <li>Skill Level</li>
+        <li>Dream Career</li>
+      </ul>
+    </ul>
+
+    <p><b>B. JavaScript Requirements</b></p>
+    <ol>
+      <li>Gumamit ng variables para sa limang impormasyon.</li>
+      <li>I-display ang limang impormasyon sa HTML page.</li>
+      <li>Gumamit ng console.log() nang limang beses.</li>
+      <li>Gumamit ng console.info() nang dalawang beses.</li>
+      <li>Gumamit ng console.warn() nang isang beses.</li>
+      <li>Gumamit ng console.error() nang isang beses.</li>
+      <li>
+        Gumamit ng console.table() para ipakita ang developer information.
+      </li>
+    </ol>
+
+    <p><b>C. Additional Challenge</b></p>
+    <p>Magdagdag ng button na Show My Information.</p>
+    <p>Kapag pinindot ang button:</p>
+    <ul>
+      <li>Magpakita ng alert na may pangalan mo.</li>
+      <li>Mag-display ng confirmation message sa Console.</li>
+    </ul>
+    <p>
+      <b>Important:</b> Huwag munang gumamit ng bagong JavaScript concepts na
+      hindi pa natin pinag-aaralan. Gamitin lamang ang mga concepts sa Lessons
+      1–3.
+    </p>
+
+    <pre>
+      Exercise-03.html
+      HTML Code:
+      &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;Developer Information Dashboard&lt;/title&gt;
+        &lt;/head&gt;
+      &lt;body&gt;
+
+          &lt;h1&gt;Developer Information Dashboard&lt;/h1&gt;
+          &lt;p&gt;Welcome to my JavaScript learning journey!&lt;/p&gt;
+
+          &lt;p&gt;&lt;strong&gt;Name: Tanzki&lt;span id="developerName"&gt;&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Age: 35&lt;/strong&lt;span id="developerAge"&gt;&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Country: Philippines&lt;span id="developerCountry"&gt;&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Skill Level: Beginner&lt;span id="developerSkill"&gt;&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Dream Career: Beginner&lt;span id="developerCareer"&gt;&lt;/strong&gt;&lt;/p&gt;
+
+          &lt;button id="infoButton"&gt;Show My Information&lt;/button&gt;
+          
+        &lt;script src="Exercise-03.js"&gt;&lt;/script&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+
+      Exercise-03.js
+        HTML Code:
+        const developerName = "Tanzki";
+        const developerAge = 20;
+        const developerCountry = "Philippines";
+        const developerSkill = "Beginner";
+        const developerCareer = "Full-Stack Web Developer";
+
+        document.getElementById("developerName").textContent = developerName;
+        document.getElementById("developerAge").textContent = developerAge;
+        document.getElementById("developerCountry").textContent = developerCountry;
+        document.getElementById("developerSkill").textContent = developerSkill;
+        document.getElementById("developerCareer").textContent = developerCareer;
+
+        console.log("Name: " + developerName);
+        console.log("Age: " + developerAge);
+        console.log("Country: " + developerCountry);
+        console.log("Skill Level: " + developerSkill);
+        console.log("Dream Career: " + developerCareer);
+
+        console.info("Info 1: Matagumpay na na-load ang Developer Information Dashboard.");
+        console.info("Info 2: Ang impormasyon ay ipinapakita sa HTML page at sa Console.");
+
+        console.warn("Warning: Ito ay sample warning message lang.");
+
+        console.error("Error: Ito ay sample error message lang para sa practice.");
+
+        console.table({
+        Name: developerName,
+        Age: developerAge,
+        Country: developerCountry,
+        "Skill Level": developerSkill,
+        "Dream Career": developerCareer
+        });
+
+        document.getElementById("infoButton").addEventListener("click", function () {
+        alert("Ang pangalan ko ay " + developerName + "!");
+        console.log("Confirmation: Na-click ang Show My Information button.");
+        });
+    </pre>
+
+    <h1>Developer Information Dashboard</h1>
+      <p>Welcome to my JavaScript learning journey!</p>
+
+      <p><strong>Name: Tanzki<span id="developerName"></span></strong></p>
+      <p><strong>Age: 35</strong<span id="developerAge"></span></p>
+      <p><strong>Country: Philippines<span id="developerCountry"></span></strong></p>
+      <p><strong>Skill Level: Beginner<span id="developerSkill"></span></strong></p>
+      <p><strong>Dream Career: Beginner<span id="developerCareer"></span></strong></p>
+
+      <button id="infoButton">Show My Information</button>
+    <script src="script.js" defer></script>
   </body>
 </html>
