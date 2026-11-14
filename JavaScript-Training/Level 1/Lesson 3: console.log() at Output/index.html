@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JavaScript Lesson 3</h1>
+    <h1>LESSON 3: console.log() at JavaScript Output</h1>
 
     <p><b>Example #1:</b></p>
     <p><b>Code:</b></p>
@@ -416,6 +416,7 @@
         &lt;button id="showInfoButton"&gt;Show My Information&lt;/button&gt;
 
         &lt;script&gt;
+          let developerName2 = "Tanzki";
           let developerAge2 = 35;
           let developerCountry2 = "Philippines";
           let developerSkillLevel2 = "Beginner";
@@ -462,9 +463,9 @@
           console.info("Name: " + developerName2);
           console.info("Age: " + developerAge2);
 
-          console.warn("Country: " + developerCountry2);
+          console.warn("Sample warning: Please check the information.");
 
-          console.error("Skill Level: " + developerSkillLevel2);
+          console.error("Sample error: This is a demonstration error.");
 
           console.table([
             {
@@ -476,7 +477,8 @@
             },
           ]);
         &lt;/script&gt;
-          
+      &lt;/body&gt;
+      &lt;/html&gt; 
     </pre>
 
     <p>File: index.html</p>
@@ -537,9 +539,8 @@
       console.info("Name: " + developerName2);
       console.info("Age: " + developerAge2);
 
-      console.warn("Country: " + developerCountry2);
-
-      console.error("Skill Level: " + developerSkillLevel2);
+      console.warn("Sample warning: Please check the information.");
+      console.error("Sample error: This is a demonstration error.");
 
       console.table([
         {

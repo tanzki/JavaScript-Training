@@ -4,12 +4,293 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Lesson 4</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>
-      Lesson 4: Syntax, Statements, at Comments console.log(`Lesson 4: Syntax,
-      Statements`)
-    </h1>
+    <h1>Lesson 4: JavaScript Syntax, Statements at Comments</h1>
+
+    <p><b>Example #1:</b></p>
+
+    <p><b>Code:</b></p>
+    <pre>
+      File: index.html
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        
+        &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+
+        &lt;p id="profile"&gt;&lt;/p&gt;
+
+        &lt;script&gt;
+          // Developer Information
+          
+          let developerName = "Tanzki"; // Developer's name
+          let developerAge = 25; // Developer's age
+          let developerCountry = "Philippines"; // Developer's country
+          let developerCareer = "Full Stack Developer"; // Developer's career
+
+          /*
+            Display Developer Information
+            Using console.log()
+          */<!--  -->
+
+          console.log("Developer Profile:");
+          console.log("-----------------");
+
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Country: " + developerCountry);
+          console.log("Career: " + developerCareer);
+
+          // Display Developer Information in the HTML page
+          document.getElementById("profile").textContent = "Hello My name is " + developerName + ". I am " +developerAge + " years old from " + developerCountry + ". My goal is to become a " +developerCareer + ".";
+
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+
+    <p><b>Output:</b></p>
+
+    <h2>JavaScript Syntax Practice</h2>
+
+    <p id="profile"></p>
+
+    <script>
+      // Developer Information
+
+      let developerName = "Tanzki"; // Developer's name
+      let developerAge = 25; // Developer's age
+      let developerCountry = "Philippines"; // Developer's country
+      let developerCareer = "Full Stack Developer"; // Developer's career
+
+      /*
+            Display Developer Information
+            Using console.log()
+          */
+
+      console.log("Developer Profile:");
+      console.log("-----------------");
+
+      console.log("Name: " + developerName);
+      console.log("Age: " + developerAge);
+      console.log("Country: " + developerCountry);
+      console.log("Career: " + developerCareer);
+
+      // Display Developer Information in the HTML page
+      document.getElementById("profile").textContent =
+        "Hello My name is " +
+        developerName +
+        ". I am " +
+        developerAge +
+        " years old from " +
+        developerCountry +
+        ". My goal is to become a " +
+        developerCareer +
+        ".";
+    </script>
+
+    <p>
+      <b>Exercise 1 — JavaScript Statements</b>
+    </p>
+    <p>File: exercise01.html</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng complete HTML document.</li>
+      <li>Gumawa ng 5 variables para sa developer information.</li>
+      <li>
+        Gumamit ng 5 magkakahiwalay na JavaScript statements para sa variables.
+      </li>
+      <li>Gumamit ng 5 console.log() statements.</li>
+      <li>Gumamit ng semicolon sa bawat statement.</li>
+      <li>Maglagay ng heading na JavaScript Statements Practice.</li>
+    </ol>
+
+    <p>Expected output sa Console:</p>
+    <ul>
+      <li>Name</li>
+      <li>Age</li>
+      <li>Country</li>
+      <li>Skill Level</li>
+      <li>Dream Career</li>
+    </ul>
+
+    <p><b>Code:</b></p>
+    <pre>
+        File: File: exercise01.html
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;   
+    </pre>
+
+    <p><b>Output:</b></p>
+
+    <p>
+      <b>Exercise 2 — JavaScript Comments</b>
+    </p>
+    <p>File: exercise02.html</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng complete HTML document.</li>
+      <li>Maglagay ng hindi bababa sa 5 single-line comments gamit ang //.</li>
+      <li>lagay ng isang multi-line comment gamit ang /* ... */.</li>
+      <li>Gumawa ng 5 variables para sa developer information.</li>
+      <li>Gumamit ng console.log() para ipakita ang mga variables.</li>
+      <li>
+        Maglagay ng isang naka-comment na console.log() na hindi dapat lumabas
+        sa Console.
+      </li>
+    </ol>
+
+    <p>Expected result:</p>
+    <ul>
+      <li>Makikita ang 5 Active messages.</li>
+      <li>Hindi makikita ang naka-comment na message.</li>
+      <li>Walang syntax errors.</li>
+    </ul>
+
+    <p><b>Code:</b></p>
+    <pre>
+        File: File: exercise02.html
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+          &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;   
+    </pre>
+
+    <p><b>Output:</b></p>
+
+    <p>
+      <b>Exercise 3 — Clean and Organized JavaScript Code</b>
+    </p>
+    <p>File: exercise03.html</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    <p>
+      <b>Layunin</b>: Hindi lamang gumagana ang code mo - dapat malinis at
+      madaling basahin.
+    </p>
+
+    <p><b>Code:</b></p>
+    <pre>
+      File: File: exercise03.html
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;   
+    </pre>
+
+    <p><b>Output:</b></p>
+
+    <p>
+      <b>Final Coding Challenge — JavaScript Code Documentation</b>
+    </p>
+    <p>Project folder: lesson-04-challenge</p>
+
+    <p>
+      Gumawa ng isang mini project na pinamagatang
+      <b>My JavaScript Learning Profile</b>
+    </p>
+
+    <p><b>A. HTML REQUIREMENTS</b></p>
+    <ul>
+      <li>Heading: My JavaScript Learning Profile</li>
+      <li>Paragraph na may ID na profile.</li>
+      <li>Gumawa ng kumpletong HTML structure.</li>
+      <li>Maglagay ng &lt;script&gt; section.</li>
+    </ul>
+
+    <p><b>B. JavaScript Requirements</b></p>
+    <p>Gumawa ng variables para sa:</p>
+    <ol>
+      <li>Developer Name</li>
+      <li>Age</li>
+      <li>Country</li>
+      <li>Current Skill Level</li>
+      <li>Dream Career</li>
+    </ol>
+    <p>Pagkatapos:</p>
+    <ul>
+      <li>Gumamit ng console.log() para ipakita ang limang impormasyon.</li>
+      <li>
+        Gumamit ng single-line comments para ipaliwanag ang bawat section.
+      </li>
+      <li>Gumamit ng isang multi-line comment para ilarawan ang project.</li>
+      <li>Gumamit ng semicolon sa bawat statement.</li>
+      <li>Gumamit ng maayos na indentation.</li>
+      <li>
+        I-display ang developer information sa HTML gamit ang textContent.
+      </li>
+    </ul>
+
+    <p><b>C. Debugging Challenge</b></p>
+    <p>
+      Gumawa ng hiwalay na section sa iyong code na may tatlong intentional
+      syntax mistakes bilang comments lamang.
+    </p>
+
+    <p>Halimbawa, ilagay ang mga ito bilang text sa comments:</p>
+    <ul>
+      <li>Missing quotation mark</li>
+      <li>Missing closing parenthesis</li>
+      <li>Incorrect capitalization</li>
+    </ul>
+
+    <p>
+      Huwag mong iwan ang mga intentional mistakes bilang active code.Dapat
+      gumagana pa rin ang project mo nang walang syntax errors.
+    </p>
+
+    <p><b>Code:</b></p>
+    <pre>
+      Project folder: lesson-04-challenge
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;   
+    </pre>
+
+    <p><b>Output:</b></p>
   </body>
 </html>
