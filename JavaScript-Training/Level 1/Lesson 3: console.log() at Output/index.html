@@ -4,11 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Lesson 3</title>
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JavaScript Output Practice</h1>
-    
+    <h1>JavaScript Lesson 3</h1>
+
+    <p><b>Example #1:</b></p>
+    <p><b>Code:</b></p>
+    <pre>
+      &lt;h2&gt;JavaScript Output Practice #1&lt;/h2&gt;
+      &lt;p id="output"&gt;&lt;/p&gt;
+
+      &lt;script&gt;
+        document.getElementById("output").textContent = "Welcome to JavaScript Lesson 3! Open the console to see the messages.";
+      &lt;/script&gt;
+    </pre>
+
+    <h2>JavaScript Output Practice #1</h2>
+
+    <script>
+      document.getElementById("output").textContent =
+        "Welcome to JavaScript Lesson 3! Open the console to see the messages.";
+    </script>
+
+    <p><b>Example #2:</b></p>
+    <p><b>Code:</b></p>
+    <pre>
+      &lt;h2&gt;JavaScript Output Practice #2&lt;/h2&gt;
+
+      &lt;p id="name"&gt;&lt;/p&gt;
+      &lt;p id="age"&gt;&lt;/p&gt;
+      &lt;p id="career"&gt;&lt;/p&gt;
+
+      &lt;script&gt;
+
+        <!-- Console Output -->
+        console.log("JavaSccript Output System Started");
+        console.info("Application is running...");
+        console.warn("This is a sample warning");
+        console.error("This is a sample error");
+
+        <!-- Developer Information -->
+        let developerName = "Tanzki";
+        let developerAge = 35;
+        let developerCareer = "Full-Stack Web Developer";
+
+        <!-- Display on HTML Page -->
+        document.getElementById("name").textContent = "Name: " + developerName;
+
+        document.getElementById("age").textContent = "Age: " + developerAge;
+
+        document.getElementById("career").textContent = "Dream Career: " + developerCareer;
+
+        <!-- Display as table -->
+        console.table([
+          {
+            name: developerName,
+            age: developerAge,
+            career: developerCareer,
+          }
+        ]);
+
+      &lt;/script&gt;
+    </pre>
+
+    <h2>JavaScript Output Practice #2</h2>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="career"></p>
+
+    <script>
+      console.log("JavaSccript Output System Started");
+      console.info("Application is running...");
+      console.warn("This is a sample warning.");
+      console.error("This is a sample error.");
+
+      let developerName = "Tanzki";
+      let developerAge = 35;
+      let developerCareer = "Full-Stack Web Developer";
+
+      document.getElementById("name").textContent = "Name: " + developerName;
+
+      document.getElementById("age").textContent = "Age: " + developerAge;
+
+      document.getElementById("career").textContent =
+        "Dream Career: " + developerCareer;
+
+      console.table([
+        {
+          name: developerName,
+          age: developerAge,
+          career: developerCareer,
+        },
+      ]);
+    </script>
+
     <h3>Exercise 1 — Basic Console Output</h3>
 
     <p>File: exercise-01.html</p>
@@ -38,30 +129,52 @@
       <li>Your learning goal.</li>
     </ul>
 
+    <!-- Output Exercise 1 -->
     <pre>
-      Exercise-01/index.html
-      HTML Code:
-
-      &lt;html&gt;
+      &lt;File: exercise-01.html&gt;
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
       &lt;head&gt;
-      &lt;title&gt;JavaScript Console Practice&lt;/title&gt;
+        &lt;title&gt;Exercise 1 - Basic Console Output&lt;/title&gt;
       &lt;/head&gt;
       &lt;body&gt;
+        &lt;h2&gt;My JavaScript Console Practice&lt;/h2&gt;
 
-        &lt;h1&gt;My JavaScript Console Practice&lt;/h1&gt;
-        &lt;p&gt;Open the Chrome Console (F12) to show all the messages.&lt;/p&gt;
+        &lt;script&gt;
+          <!-- 5 console.log -->
+          console.log("Welcome to my JavaScript Console Practice!");
+          console.log("My name is Tanzki.");
+          console.log("I am 35 years old.");
+          console.log("My dream career is Full-Stack Web Developer.");
+          console.log("My learning goal is to become a proficient web developer.");
 
-      &lt;script&gt;
-        console.log("Welcome: Hi my name is Tanzki! and I am a beginner in JavaScript.");
-        console.log("Name: Tanzki");
-        console.log("Age: 35");
-        console.log("Dream career: To be a Full-Stack Web Developer");
-        console.log("Learning goal: To learn JavaScript and become a professional web developer.");
-      &lt;/script&gt;
-      
+          <!-- 2 console.info -->
+          console.info("This is an information message.");
+          console.info("This is another information message.");
+
+        &lt;/script&gt;
+        
       &lt;/body&gt;
       &lt;/html&gt;
     </pre>
+
+    <p><b>File: exercise-01.html</b></p>
+    <h2>My JavaScript Console Practice</h2>
+
+    <script>
+      console.log("Exercise 1");
+      console.log("File: exercise-01.html");
+      // 5 console.log
+      console.log("Welcome to my JavaScript Console Practice!");
+      console.log("My name is Tanzki.");
+      console.log("I am 35 years old.");
+      console.log("My dream career is Full-Stack Web Developer.");
+      console.log("My learning goal is to become a proficient web developer.");
+
+      // 2 console.info
+      console.info("This is an information message.");
+      console.info("This is another information message.");
+    </script>
 
     <h3>Exercise 2 — Warning and Error Messages</h3>
 
@@ -83,37 +196,61 @@
       sa Chrome Console.
     </p>
 
+    <!-- Output Exercise 2 -->
     <pre>
-      Exercise-02.html
-      HTML Code:
-
-      &lt;html&gt;
+      &lt;p&gt;File: exercise-02.html&lt;/p&gt;
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
       &lt;head&gt;
-      &lt;title&gt;JavaScript  Message Testing&lt;/title&gt;
+        &lt;title&gt;Exercise 2 - Warning and Error Messages&lt;/title&gt;
       &lt;/head&gt;
       &lt;body&gt;
+        &lt;h2&gt;JavaScript Message Testing&lt;/h2&gt;
 
-        &lt;h1&gt;JavaScript Message Testing&lt;/h1&gt;
+        &lt;script&gt;
+          <!-- 2 Console log -->
+          console.log("This is a normal message.");
+          console.log("This is another normal message.");
 
-      &lt;script&gt;
-        console.log("Console Log Message 1");
-        console.log("Console Log Message 2");
-        
-        console.warn("console.warn Message 1");
-        console.warn("console.warn Message 2");
-        
-        console.error("console.error Message 1");
-        console.error("console.error Message 2");
+          <!-- 2 Console warn -->
+          console.warn("This is a warning message.");
+          console.warn("This is another warning message.");
 
-        console.info("console.info Message 1");
-      &lt;/script&gt;
-      
+          <!-- 2 Console error -->
+          console.error("This is an error message.");
+          console.error("This is another error message.");
+
+          <!-- 1 Console info -->
+          console.info("This is an information message.");
+        &lt;/script&gt;
+
       &lt;/body&gt;
       &lt;/html&gt;
     </pre>
 
-    <h3>Exercise 3 - HTML Output and Console Table</h3>
+    <p><b>File: exercise-02.html</b></p>
+    <h2>JavaScript Message Testing</h2>
 
+    <script>
+      console.log("Exercise 2");
+      console.log("File: exercise-02.html");
+      // 2 Console log
+      console.log("This is a normal message.");
+      console.log("This is another normal message.");
+
+      // 2 Console warn
+      console.warn("This is a warning message.");
+      console.warn("This is another warning message.");
+
+      // 2 Console error
+      console.error("This is an error message.");
+      console.error("This is another error message.");
+
+      // 1 Console info
+      console.info("This is an information message.");
+    </script>
+
+    <h3>Exercise 3 - HTML Output and Console Table</h3>
     <p>File: exercise-03.html</p>
     <p>Requirements:</p>
     <ol>
@@ -134,59 +271,83 @@
     </ol>
 
     <pre>
-      Exercise-03.html
-      HTML Code:
-      &lt;html&gt;
-        &lt;head&gt;
-        &lt;title&gt;JavaScript  Message Testing&lt;/title&gt;
-        &lt;/head&gt;
+      &lt;p&gt;File: exercise-03.html&lt;/p&gt;
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;Exercise 3 - HTML Output and Console Table&lt;/title&gt;
+      &lt;/head&gt;
       &lt;body&gt;
+        &lt;h2&gt;My Developer Profile&lt;/h2&gt;
 
-          &lt;h1&gt;My Developer Profile&lt;/h1&gt;
-
-          &lt;p&gt;Name: Tanzki&lt;/p&gt;
-          &lt;p&gt;Age: 35&lt;/p&gt;
-          &lt;p&gt;Skill Level: Beginner&lt;/p&gt;
-          &lt;p&gt;Dream Career: Full Stack Developer&lt;/p&gt;
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+        &lt;p id="dream-career"&gt;&lt;/p&gt;
 
         &lt;script&gt;
           let name = "Tanzki";
           let age = 35;
-          let skillLevel = "Beginner";
-          let dreamCareer = "Full Stack Developer";
+          let skillLevel = "Intermediate";
+          let dreamCareer = "Full-Stack Web Developer";
 
           document.getElementById("name").textContent = "Name: " + name;
           document.getElementById("age").textContent = "Age: " + age;
-          document.getElementById("skillLevel").textContent =
+          document.getElementById("skill-level").textContent =
             "Skill Level: " + skillLevel;
-          document.getElementById("dreamCareer").textContent =
+          document.getElementById("dream-career").textContent =
             "Dream Career: " + dreamCareer;
 
+          console.log("Developer Information:");
           console.log("Name: " + name);
           console.log("Age: " + age);
           console.log("Skill Level: " + skillLevel);
           console.log("Dream Career: " + dreamCareer);
 
           console.table([
-            {
-              Name: name,
-              Age: age,
-              Skill_Level: skillLevel,
-              Dream_Career: dreamCareer,
-            },
+            { Name: name, Age: age, SkillLevel: skillLevel, DreamCareer: dreamCareer },
           ]);
         &lt;/script&gt;
-        
+
       &lt;/body&gt;
       &lt;/html&gt;
     </pre>
 
-    <h1>My Developer Profile</h1>
+    <p><b>File: exercise-03.html</b></p>
+    <h2>My Developer Profile</h2>
 
-    <p>Name: Tanzki</p>
-    <p>Age: 35</p>
-    <p>Skill Level: Beginner</p>
-    <p>Dream Career: Full Stack Developer</p>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="skill-level"></p>
+    <p id="dream-career"></p>
+
+    <script>
+      let name = "Tanzki";
+      let age = 35;
+      let skillLevel = "Beginner";
+      let dreamCareer = "Full-Stack Web Developer";
+
+      document.getElementById("name").textContent = "Name: " + name;
+      document.getElementById("age").textContent = "Age: " + age;
+      document.getElementById("skill-level").textContent =
+        "Skill Level: " + skillLevel;
+      document.getElementById("dream-career").textContent =
+        "Dream Career: " + dreamCareer;
+
+      console.log("Developer Information:");
+      console.log("Name: " + name);
+      console.log("Age: " + age);
+      console.log("Skill Level: " + skillLevel);
+      console.log("Dream Career: " + dreamCareer);
+      console.table([
+        {
+          Name: name,
+          Age: age,
+          SkillLevel: skillLevel,
+          DreamCareer: dreamCareer,
+        },
+      ]);
+    </script>
 
     <h3>Final Coding Challenge — Developer Information Dashboard</h3>
 
@@ -234,80 +395,165 @@
     </p>
 
     <pre>
-      Exercise-03.html
-      HTML Code:
-      &lt;html&gt;
-        &lt;head&gt;
+      &lt;File: index.html&gt;
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
         &lt;title&gt;Developer Information Dashboard&lt;/title&gt;
-        &lt;/head&gt;
+      &lt;/head&gt;
       &lt;body&gt;
+        &lt;h2&gt;Developer Information Dashboard&lt;/h2&gt;
+        &lt;p&gt;Welcome to my JavaScript learning journey!&lt;/p&gt;
 
-          &lt;h1&gt;Developer Information Dashboard&lt;/h1&gt;
-          &lt;p&gt;Welcome to my JavaScript learning journey!&lt;/p&gt;
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="country"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+        &lt;p id="dream-career"&gt;&lt;/p&gt;
 
-          &lt;p&gt;&lt;strong&gt;Name: Tanzki&lt;span id="developerName"&gt;&lt;/strong&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Age: 35&lt;/strong&lt;span id="developerAge"&gt;&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Country: Philippines&lt;span id="developerCountry"&gt;&lt;/strong&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Skill Level: Beginner&lt;span id="developerSkill"&gt;&lt;/strong&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Dream Career: Beginner&lt;span id="developerCareer"&gt;&lt;/strong&gt;&lt;/p&gt;
+        &lt;button id="showInfoButton"&gt;Show My Information&lt;/button&gt;
 
-          &lt;button id="infoButton"&gt;Show My Information&lt;/button&gt;
+        &lt;script&gt;
+          let developerAge2 = 35;
+          let developerCountry2 = "Philippines";
+          let developerSkillLevel2 = "Beginner";
+          let developerDreamCareer2 = "Full-Stack Web Developer";
+          let showInfoButton = document.getElementById("showInfoButton");
+
+          document.getElementById("name").textContent = "Name: " + developerName2;
+          document.getElementById("age").textContent = "Age: " + developerAge2;
+          document.getElementById("country").textContent =
+            "Country: " + developerCountry2;
+          document.getElementById("skill-level").textContent =
+            "Skill Level: " + developerSkillLevel2;
+          document.getElementById("dream-career").textContent =
+            "Dream Career: " + developerDreamCareer2;
+
+          showInfoButton.addEventListener("click", function () {
+            alert(
+              [
+                "Name: " + developerName2,
+                "Age: " + developerAge2,
+                "Country: " + developerCountry2,
+                "Skill Level: " + developerSkillLevel2,
+                "Dream Career: " + developerDreamCareer2,
+              ].join("\n"),
+            );
+            console.log("Developer information displayed successfully!");
+            console.table([
+              {
+                name: developerName2,
+                age: developerAge2,
+                country: developerCountry2,
+                skillLevel: developerSkillLevel2,
+                dreamCareer: developerDreamCareer2,
+              },
+            ]);
+          });
+
+          console.log("Name: " + developerName2);
+          console.log("Age: " + developerAge2);
+          console.log("Country: " + developerCountry2);
+          console.log("Skill Level: " + developerSkillLevel2);
+          console.log("Dream Career: " + developerDreamCareer2);
+
+          console.info("Name: " + developerName2);
+          console.info("Age: " + developerAge2);
+
+          console.warn("Country: " + developerCountry2);
+
+          console.error("Skill Level: " + developerSkillLevel2);
+
+          console.table([
+            {
+              name: developerName2,
+              age: developerAge2,
+              country: developerCountry2,
+              skillLevel: developerSkillLevel2,
+              dreamCareer: developerDreamCareer2,
+            },
+          ]);
+        &lt;/script&gt;
           
-        &lt;script src="Exercise-03.js"&gt;&lt;/script&gt;
-      &lt;/body&gt;
-      &lt;/html&gt;
-
-      Exercise-03.js
-        HTML Code:
-        const developerName = "Tanzki";
-        const developerAge = 20;
-        const developerCountry = "Philippines";
-        const developerSkill = "Beginner";
-        const developerCareer = "Full-Stack Web Developer";
-
-        document.getElementById("developerName").textContent = developerName;
-        document.getElementById("developerAge").textContent = developerAge;
-        document.getElementById("developerCountry").textContent = developerCountry;
-        document.getElementById("developerSkill").textContent = developerSkill;
-        document.getElementById("developerCareer").textContent = developerCareer;
-
-        console.log("Name: " + developerName);
-        console.log("Age: " + developerAge);
-        console.log("Country: " + developerCountry);
-        console.log("Skill Level: " + developerSkill);
-        console.log("Dream Career: " + developerCareer);
-
-        console.info("Info 1: Matagumpay na na-load ang Developer Information Dashboard.");
-        console.info("Info 2: Ang impormasyon ay ipinapakita sa HTML page at sa Console.");
-
-        console.warn("Warning: Ito ay sample warning message lang.");
-
-        console.error("Error: Ito ay sample error message lang para sa practice.");
-
-        console.table({
-        Name: developerName,
-        Age: developerAge,
-        Country: developerCountry,
-        "Skill Level": developerSkill,
-        "Dream Career": developerCareer
-        });
-
-        document.getElementById("infoButton").addEventListener("click", function () {
-        alert("Ang pangalan ko ay " + developerName + "!");
-        console.log("Confirmation: Na-click ang Show My Information button.");
-        });
     </pre>
 
-    <h1>Developer Information Dashboard</h1>
-      <p>Welcome to my JavaScript learning journey!</p>
+    <p>File: index.html</p>
 
-      <p><strong>Name: Tanzki<span id="developerName"></span></strong></p>
-      <p><strong>Age: 35</strong<span id="developerAge"></span></p>
-      <p><strong>Country: Philippines<span id="developerCountry"></span></strong></p>
-      <p><strong>Skill Level: Beginner<span id="developerSkill"></span></strong></p>
-      <p><strong>Dream Career: Beginner<span id="developerCareer"></span></strong></p>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="skill-level"></p>
+    <p id="dream-career"></p>
 
-      <button id="infoButton">Show My Information</button>
+    <button id="showInfoButton">Show My Information</button>
+
+    <script>
+      let developerName2 = "Tanzki";
+      let developerAge2 = 35;
+      let developerCountry2 = "Philippines";
+      let developerSkillLevel2 = "Beginner";
+      let developerDreamCareer2 = "Full-Stack Web Developer";
+      let showInfoButton = document.getElementById("showInfoButton");
+
+      document.getElementById("name").textContent = "Name: " + developerName2;
+      document.getElementById("age").textContent = "Age: " + developerAge2;
+      document.getElementById("country").textContent =
+        "Country: " + developerCountry2;
+      document.getElementById("skill-level").textContent =
+        "Skill Level: " + developerSkillLevel2;
+      document.getElementById("dream-career").textContent =
+        "Dream Career: " + developerDreamCareer2;
+
+      showInfoButton.addEventListener("click", function () {
+        alert(
+          [
+            "Name: " + developerName2,
+            "Age: " + developerAge2,
+            "Country: " + developerCountry2,
+            "Skill Level: " + developerSkillLevel2,
+            "Dream Career: " + developerDreamCareer2,
+          ].join("\n"),
+        );
+        console.log("Developer information displayed successfully!");
+        console.table([
+          {
+            name: developerName2,
+            age: developerAge2,
+            country: developerCountry2,
+            skillLevel: developerSkillLevel2,
+            dreamCareer: developerDreamCareer2,
+          },
+        ]);
+      });
+
+      console.log("Name: " + developerName2);
+      console.log("Age: " + developerAge2);
+      console.log("Country: " + developerCountry2);
+      console.log("Skill Level: " + developerSkillLevel2);
+      console.log("Dream Career: " + developerDreamCareer2);
+
+      console.info("Name: " + developerName2);
+      console.info("Age: " + developerAge2);
+
+      console.warn("Country: " + developerCountry2);
+
+      console.error("Skill Level: " + developerSkillLevel2);
+
+      console.table([
+        {
+          name: developerName2,
+          age: developerAge2,
+          country: developerCountry2,
+          skillLevel: developerSkillLevel2,
+          dreamCareer: developerDreamCareer2,
+        },
+      ]);
+    </script>
+
     <script src="script.js" defer></script>
+
+    <p><b>Mini Quiz: Q1:-B Q2:-C Q3:-A Q4:-B Q5:-A Q6:-A Q7:-B</b></p>
   </body>
 </html>
