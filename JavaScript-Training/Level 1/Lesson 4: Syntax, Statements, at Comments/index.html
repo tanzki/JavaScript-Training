@@ -104,39 +104,73 @@
     <p>Requirements:</p>
     <ol>
       <li>Gumawa ng complete HTML document.</li>
-      <li>Gumawa ng 5 variables para sa developer information.</li>
-      <li>
-        Gumamit ng 5 magkakahiwalay na JavaScript statements para sa variables.
-      </li>
-      <li>Gumamit ng 5 console.log() statements.</li>
-      <li>Gumamit ng semicolon sa bawat statement.</li>
+      <li>Gumawa ng variables:</li>
+      <ul>
+        <li>developerName</li>
+        <li>developerAge</li>
+        <li>developerCareer</li>
+        <li>learningGoal</li>
+      </ul>
+      <li>Gumamit ng console.log() para ipakita ang bawat variable.</li>
+      <li>Maglagay ng semicolon sa bawat statement.</li>
       <li>Maglagay ng heading na JavaScript Statements Practice.</li>
     </ol>
 
-    <p>Expected output sa Console:</p>
-    <ul>
-      <li>Name</li>
-      <li>Age</li>
-      <li>Country</li>
-      <li>Skill Level</li>
-      <li>Dream Career</li>
-    </ul>
+    <p></p>
 
     <p><b>Code:</b></p>
     <pre>
-        File: File: exercise01.html
+        File: exercise01.html
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
         &lt;head&gt;
-          &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+          &lt;title&gt;JavaScript Statements Practice&lt;/title&gt;
         &lt;/head&gt;
         &lt;body&gt;
-          &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+          <!-- Heading Title -->
+          &lt;h1&gt;JavaScript Statements Practice&lt;/h1&gt;
+        
+          &lt;script&gt;
+            <!-- Developer Information -->
+            let developerName2 = "Tanzki";
+            let developerAge2 = 35;
+            let developerCountry2 = "Philippines";
+            let developerSkillLevel2 = "Beginner";
+            let developerDreamCareer2 = " To be a Full Stack Web Developer";
+
+            <!-- Developer Output console.log() -->
+            console.log(developerName2);
+            console.log(developerAge2);
+            console.log(developerCountry2);
+            console.log(developerSkillLevel2);
+            console.log(developerDreamCareer2);
+          &lt;/script&gt;
+
         &lt;/body&gt;
-        &lt;/html&gt;   
+        &lt;/html&gt;
+
     </pre>
 
     <p><b>Output:</b></p>
+
+    <!-- Heading Title -->
+    <h1>JavaScript Statements Practice</h1>
+
+    <script>
+      // Developer Information
+      let developerName2 = "Tanzki";
+      let developerAge2 = 35;
+      let developerCountry2 = "Philippines";
+      let developerSkillLevel2 = "Beginner";
+      let developerDreamCareer2 = " To be a Full Stack Web Developer";
+
+      // Developer Output console.log()
+      console.log(developerName2);
+      console.log(developerAge2);
+      console.log(developerCountry2);
+      console.log(developerSkillLevel2);
+      console.log(developerDreamCareer2);
+    </script>
 
     <p>
       <b>Exercise 2 — JavaScript Comments</b>
@@ -146,17 +180,20 @@
     <p>Requirements:</p>
     <ol>
       <li>Gumawa ng complete HTML document.</li>
-      <li>Maglagay ng hindi bababa sa 5 single-line comments gamit ang //.</li>
-      <li>lagay ng isang multi-line comment gamit ang /* ... */.</li>
-      <li>Gumawa ng 5 variables para sa developer information.</li>
-      <li>Gumamit ng console.log() para ipakita ang mga variables.</li>
+      <li>Gumamit ng hindi bababa sa tatlong single-line comments.</li>
       <li>
-        Maglagay ng isang naka-comment na console.log() na hindi dapat lumabas
-        sa Console.
+        Gumamit ng isang multi-line comment na may hindi bababa sa tatlong
+        lines.
       </li>
+      <li>Gumawa ng limang console.log() statements.</li>
+      <li>I-comment out ang isa sa limang console.log() statements.</li>
+      <li>Siguraduhing apat lamang ang messages na lumalabas sa Console.</li>
     </ol>
 
-    <p>Expected result:</p>
+    <p>
+      <b>Expected result:</b> Makikita sa Console ang apat na messages. Hindi
+      dapat lumabas ang naka-comment na statement.
+    </p>
     <ul>
       <li>Makikita ang 5 Active messages.</li>
       <li>Hindi makikita ang naka-comment na message.</li>
@@ -169,38 +206,122 @@
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
         &lt;head&gt;
-          &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+          &lt;title&gt;JavaScript Statements Practice&lt;/title&gt;
         &lt;/head&gt;
         &lt;body&gt;
-          &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+          &lt;h1&gt;JavaScript Statements Practice&lt;/h1&gt;
+
+
+          &lt;script&gt;
+            /* 
+              This program demonstrates how to store and display a
+              developer's information using JavaScript variables and
+              the console.log() method.
+              It declares five variables that hold the developer's
+              name, age, job position, primary programming language,
+              and location.
+              The values of these variables are then printed to the
+              browser's Console so that they can be easily viewed
+              and checked.
+            */
+
+            // Variable developer Name.
+            let developerName3 = "Tanzki";
+
+            // Variable developer Age.
+            let developerAge3 = 35;
+            
+            // Variable developer Country.
+            let developerCountry3 = "Philippines";
+
+            // Variable developer Skill Level.
+            let developerSkillLevel3 = "Beginner";
+
+            // Variable developer Dream Career.
+            let developerDreamCareer3 = "To be a Full Stack Web Developer";
+
+            // Console.log Output variables.
+            console.log(developerName3);
+            console.log(developerAge3);
+            console.log(developerCountry3);
+            console.log(developerSkillLevel3);
+            console.log(developerDreamCareer3);
+
+            // The following console.log() is commented out, so it will not appear
+            // console.log("This will not appear in the Console");
+          &lt;/script&gt;
         &lt;/body&gt;
         &lt;/html&gt;   
     </pre>
 
     <p><b>Output:</b></p>
 
+    <h1>JavaScript Statements Practice</h1>
+
+    <script>
+      /* 
+          This program demonstrates how to store and display a
+          developer's information using JavaScript variables and
+          the console.log() method.
+          It declares five variables that hold the developer's
+          name, age, job position, primary programming language,
+          and location.
+          The values of these variables are then printed to the
+          browser's Console so that they can be easily viewed
+          and checked.
+        */
+
+      // Variable developer Name.
+      let developerName3 = "Tanzki";
+      // Variable developer Age.
+      let developerAge3 = 35;
+      // Variable developer Country.
+      let developerCountry3 = "Philippines";
+      // Variable developer Skill.
+      let developerSkillLevel3 = "Baginner";
+      // Variable developer Dream Career.
+      let developerDreamCareer3 = "To be a Full Stack Web Developer";
+
+      // Console.log Output variables.
+      console.log(developerName3);
+      console.log(developerAge3);
+      console.log(developerCountry3);
+      console.log(developerSkillLevel3);
+      console.log(developerDreamCareer3);
+
+      // The following console.log() is commented out, so it will not appear
+      // console.log("This will not appear in the Console");
+    </script>
+
     <p>
-      <b>Exercise 3 — Clean and Organized JavaScript Code</b>
+      <b>Exercise 3 — JavaScript Syntax Practice</b>
     </p>
     <p>File: exercise03.html</p>
 
     <p>Requirements:</p>
+
+    <p>Gumawa ng JavaScript code na may:</p>
     <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Tatlong variables.</li>
+      <li>Limang console.log() statements.</li>
+      <li>Dalawang single-line comments.</li>
+      <li>Isang multi-line comment.</li>
+      <li>Tamang semicolon.</li>
+      <li>Tamang capitalization.</li>
+      <li>Isang code block gamit ang { }.</li>
     </ol>
 
     <p>
-      <b>Layunin</b>: Hindi lamang gumagana ang code mo - dapat malinis at
-      madaling basahin.
+      Additional task: Gumawa ng hiwalay na test kung saan magpapakita ka ng
+      isang syntax error at pagkatapos ay aayusin mo ito.
     </p>
+
+    <p>I-submit ang:</p>
+    <ul>
+      <li>Original code na may error.</li>
+      <li>Error message sa Chrome Console.</li>
+      <li>- Corrected code.</li>
+    </ul>
 
     <p><b>Code:</b></p>
     <pre>
@@ -211,7 +332,12 @@
         &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
       &lt;/head&gt;
       &lt;body&gt;
-        &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+        &lt;h1&gt;JavaScript Syntax Practice&lt;/h1&gt;
+
+        &lt;script&gt;
+
+        &lt;/script&gt;
+
       &lt;/body&gt;
       &lt;/html&gt;   
     </pre>
@@ -219,21 +345,26 @@
     <p><b>Output:</b></p>
 
     <p>
-      <b>Final Coding Challenge — JavaScript Code Documentation</b>
+      <b>Final Coding Challenge — JavaScript Developer Information System</b>
     </p>
-    <p>Project folder: lesson-04-challenge</p>
+    <p>File: lesson-04-challenge</p>
 
     <p>
-      Gumawa ng isang mini project na pinamagatang
-      <b>My JavaScript Learning Profile</b>
+      Gagawa ka ng maliit na JavaScript project na nagpapakita ng iyong
+      kakayahan sa syntax, statements, at comments.
     </p>
 
-    <p><b>A. HTML REQUIREMENTS</b></p>
+    <p>Project folder:</p>
+    <pre>
+      lesson-04-challenge/
+      └── index.html
+    </pre>
+
+    <p><b>A. HTML Requirements</b></p>
     <ul>
-      <li>Heading: My JavaScript Learning Profile</li>
-      <li>Paragraph na may ID na profile.</li>
-      <li>Gumawa ng kumpletong HTML structure.</li>
-      <li>Maglagay ng &lt;script&gt; section.</li>
+      <li>Heading: JavaScript Developer Information System</li>
+      <li>Paragraph: Welcome to my programming profile.</li>
+      <li>Five empty paragraphs para sa developer information.</li>
     </ul>
 
     <p><b>B. JavaScript Requirements</b></p>
@@ -242,40 +373,36 @@
       <li>Developer Name</li>
       <li>Age</li>
       <li>Country</li>
-      <li>Current Skill Level</li>
+      <li>Skill Level</li>
       <li>Dream Career</li>
     </ol>
     <p>Pagkatapos:</p>
     <ul>
-      <li>Gumamit ng console.log() para ipakita ang limang impormasyon.</li>
+      <li>Gumamit ng console.log() nang hindi bababa sa limang beses.</li>
       <li>
-        Gumamit ng single-line comments para ipaliwanag ang bawat section.
+        Ipakita ang limang impormasyon sa HTML page gamit ang textContent.
       </li>
-      <li>Gumamit ng isang multi-line comment para ilarawan ang project.</li>
-      <li>Gumamit ng semicolon sa bawat statement.</li>
-      <li>Gumamit ng maayos na indentation.</li>
-      <li>
-        I-display ang developer information sa HTML gamit ang textContent.
-      </li>
+      <li>Gumamit ng hindi bababa sa limang single-line comments.</li>
+      <li>Gumamit ng dalawang multi-line comments.</li>
+      <li>Gumamit ng isang code block.</li>
+      <li>Gumamit ng tamang semicolon.</li>
+      <li>Siguraduhing walang syntax error.</li>
     </ul>
 
-    <p><b>C. Debugging Challenge</b></p>
+    <p><b>C. Code Quality Requirements</b></p>
     <p>
-      Gumawa ng hiwalay na section sa iyong code na may tatlong intentional
-      syntax mistakes bilang comments lamang.
+      Hindi lang functionality ang susuriin natin. Susuriin din natin kung
+      malinis at madaling basahin ang code mo. -
     </p>
 
     <p>Halimbawa, ilagay ang mga ito bilang text sa comments:</p>
     <ul>
-      <li>Missing quotation mark</li>
-      <li>Missing closing parenthesis</li>
-      <li>Incorrect capitalization</li>
+      <li>Consistent ang indentation.</li>
+      <li>Maayos ang variable names.</li>
+      <li>Walang maling capitalization.</li>
+      <li>Kumpleto ang opening at closing tags.</li>
+      <li>Walang unnecessary comments.</li>
     </ul>
-
-    <p>
-      Huwag mong iwan ang mga intentional mistakes bilang active code.Dapat
-      gumagana pa rin ang project mo nang walang syntax errors.
-    </p>
 
     <p><b>Code:</b></p>
     <pre>
@@ -283,14 +410,119 @@
       &lt;!DOCTYPE html&gt;
       &lt;html lang="en"&gt;
       &lt;head&gt;
-        &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
+        &lt;title&gt;My JavaScript Learning Profile&lt;/title&gt;
       &lt;/head&gt;
       &lt;body&gt;
-        &lt;h2&gt;JavaScript Syntax Practice&lt;/h2&gt;
+        &lt;h1&gt;My JavaScript Learning Profile&lt;/h1&gt;
+
+        &lt;p id="profile"&gt;&lt;/p&gt;
+
+        &lt;script&gt;
+          // ===== Section 1: Variables =====
+          // Variable developer Name.
+          let developerName5 = "Tanzki";
+
+          // Variable developer Age.
+          let developerAge5 = 35;
+
+          // Variable developer Country.
+          let developerCountry5 = "Philippines";
+
+          // Variable developer Current Skill Level.
+          let developerCurrentSkillLevel5 = "Baginner";
+
+          // Variable developer Dream Career.
+          let developerDreamCareer5 = "To be a Full Stack Web Developer";
+
+          // ===== Section 2: Console Output =====
+          // Displays the five pieces of information in the Console
+          console.log(developerName5);
+          console.log(developerAge5);
+          console.log(developerCountry5);
+          console.log(developerSkillLevel5);
+          console.log(developerDreamCareer5);
+
+          // ===== Section 3: Display on the Web Page =====
+          // Variable for displaying the profile information
+          let profileElement = documen.getElementById("profile");
+
+          // Uses textContent to show the developer information in the HTML.
+          profileElement.textContent = 
+          "Developer Name: " + developerName5 + " | " + 
+          "Developer Age: " + developerAge5 + " | " + 
+          "Developer Country " + developerCountry4 " | " + 
+          "Developer Skill Level: " + developerSkillLevel5 " | " + 
+          "developer Dream Career: " + developerDreamCareer5;
+
+          // ===== Section 4: Debugging Challenge =====
+          // The following are intentional syntax mistakes (comments only):
+          // Mistake 1 - Missing quotation mark: let country = "Philippines;
+          // Mistake 2 - Missing closing parenthesis: console.log("Hello";
+          // Mistake 3 - Incorrect capitalization: Console.Log("Hello");
+        &lt;/script&gt; 
+      
       &lt;/body&gt;
       &lt;/html&gt;   
     </pre>
 
     <p><b>Output:</b></p>
+    <h1>My JavaScript Learning Profile</h1>
+
+    <p id="profile"></p>
+
+    <script>
+      // ===== Section 1: Variables =====
+      // Variable developer Name.
+      let developerName5 = "Tanzki";
+
+      // Variable developer Age.
+      let developerAge5 = 35;
+
+      // Variable developer Country.
+      let developerCountry5 = "Philippines";
+
+      // Variable developer Current Skill Level.
+      let developerCurrentSkillLevel5 = "Baginner";
+
+      // Variable developer Dream Career.
+      let developerDreamCareer5 = "To be a Full Stack Web Developer";
+
+      // ===== Section 2: Console Output =====
+      // Displays the five pieces of information in the Console
+      console.log(developerName5);
+      console.log(developerAge5);
+      console.log(developerCountry5);
+      console.log(developerCurrentSkillLevel5);
+      console.log(developerDreamCareer5);
+
+      // ===== Section 3: Display on the Web Page =====
+      // Variable for displaying the profile information
+      let profileElement = document.getElementById("profile");
+
+      // Uses textContent to show the developer information in the HTML.
+      profileElement.textContent =
+        "Developer Name: " +
+        developerName5 +
+        " | " +
+        "Developer Age: " +
+        developerAge5 +
+        " | " +
+        "Developer Country: " +
+        developerCountry5 +
+        " | " +
+        "Developer Current Skill Level: " +
+        developerCurrentSkillLevel5 +
+        " | " +
+        "Developer Dream Career: " +
+        developerDreamCareer5;
+
+      // ===== Section 4: Debugging Challenge =====
+      // The following are intentional syntax mistakes (comments only):
+      // Mistake 1 - Missing quotation mark: let country = "Philippines;
+      // Mistake 2 - Missing closing parenthesis: console.log("Hello";
+      // Mistake 3 - Incorrect capitalization: Console.Log("Hello");
+    </script>
+
+    <p><b>Mini Quiz: Q1:-A Q2:-B Q3:-C Q4:-B Q5:-A Q6:-B Q7:-B</b></p>
   </body>
 </html>
