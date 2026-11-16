@@ -13,7 +13,7 @@
     <p><b>Example #1:</b></p>
 
     <p><b>Code:</b></p>
-    <pre>
+    <pre id="code-details">
       File: index.html
       &lt;!DOCTYPE html&gt;
       &lt;html lang="en"&gt;
@@ -55,6 +55,8 @@
       &lt;/body&gt;
       &lt;/html&gt;
     </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
 
     <p><b>Output:</b></p>
 
@@ -71,12 +73,9 @@
       let developerCareer = "Full Stack Developer"; // Developer's career
 
       /*
-            Display Developer Information
-            Using console.log()
-          */
-
-      console.log("Developer Profile:");
-      console.log("-----------------");
+        Display Developer Information
+        Using console.log()
+      */
 
       console.log("Name: " + developerName);
       console.log("Age: " + developerAge);
@@ -119,7 +118,9 @@
     <p></p>
 
     <p><b>Code:</b></p>
-    <pre>
+
+    <pre id="code-details">
+    <p>Exercise 1 — JavaScript Statements</p>
         File: exercise01.html
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
@@ -132,24 +133,25 @@
         
           &lt;script&gt;
             <!-- Developer Information -->
-            let developerName2 = "Tanzki";
-            let developerAge2 = 35;
-            let developerCountry2 = "Philippines";
-            let developerSkillLevel2 = "Beginner";
-            let developerDreamCareer2 = " To be a Full Stack Web Developer";
+            let developerName = "Tanzki";
+            let developerAge = 35;
+            let developerCountry = "Philippines";
+            let developerSkillLevel = "Beginner";
+            let developerDreamCareer = "To be a Full Stack Web Developer";
 
             <!-- Developer Output console.log() -->
-            console.log(developerName2);
-            console.log(developerAge2);
-            console.log(developerCountry2);
-            console.log(developerSkillLevel2);
-            console.log(developerDreamCareer2);
+            console.log(developerName);
+            console.log(developerAge);
+            console.log(developerCountry);
+            console.log(developerSkillLevel);
+            console.log(developerDreamCareer);
           &lt;/script&gt;
 
         &lt;/body&gt;
         &lt;/html&gt;
-
     </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
 
     <p><b>Output:</b></p>
 
@@ -162,7 +164,7 @@
       let developerAge2 = 35;
       let developerCountry2 = "Philippines";
       let developerSkillLevel2 = "Beginner";
-      let developerDreamCareer2 = " To be a Full Stack Web Developer";
+      let developerDreamCareer2 = "To be a Full Stack Web Developer";
 
       // Developer Output console.log()
       console.log(developerName2);
@@ -201,15 +203,16 @@
     </ul>
 
     <p><b>Code:</b></p>
-    <pre>
+    <pre id="code-details">
+    <p>Exercise 2 — JavaScript Comments</p>
         File: File: exercise02.html
         &lt;!DOCTYPE html&gt;
         &lt;html lang="en"&gt;
         &lt;head&gt;
-          &lt;title&gt;JavaScript Statements Practice&lt;/title&gt;
+          &lt;title&gt;JavaScript Comments Practice&lt;/title&gt;
         &lt;/head&gt;
         &lt;body&gt;
-          &lt;h1&gt;JavaScript Statements Practice&lt;/h1&gt;
+          &lt;h1&gt;JavaScript Comments Practice&lt;/h1&gt;
 
 
           &lt;script&gt;
@@ -253,6 +256,8 @@
         &lt;/body&gt;
         &lt;/html&gt;   
     </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
 
     <p><b>Output:</b></p>
 
@@ -324,7 +329,8 @@
     </ul>
 
     <p><b>Code:</b></p>
-    <pre>
+    <pre id="code-details">
+    <p>Exercise 3 — JavaScript Syntax Practice</p>
       File: File: exercise03.html
       &lt;!DOCTYPE html&gt;
       &lt;html lang="en"&gt;
@@ -336,13 +342,88 @@
 
         &lt;script&gt;
 
+        /*
+          Multi-line comment:
+          This is a multi-line comment.
+          This program stores a student's information
+          and prints it to the console.
+        */
+
+        // Single-line comment #1 3 Variables Declaration.
+        let developerName = "Tanzki";
+        let developerAge = 35;
+        let developerDramCareer = "To be a Full Stack Web Developer";
+
+
+        console.log("Name:" + developerName);
+        console.log("Age:" + developerAge);
+        console.log("Dream Career: " + developerDramCareer);
+
+        // Single-line comment #2 3 code block using {}.
+        {
+          let skillLevel = "Beginner";
+          console.log(skillLevel);
+        }
+        
+
+        &lt;/script&gt;
+
+        &lt;script&gt;
+          // Code with error
+          // Rrror message on Chrome Console
+          // Uncaught SyntaxError: missing ) after argument list
+          console.log("Hello World";
+        &lt;/script&gt;
+
+        &lt;script&gt;
+          // Corrected code
+          console.log("Hello World");
         &lt;/script&gt;
 
       &lt;/body&gt;
       &lt;/html&gt;   
     </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
 
     <p><b>Output:</b></p>
+
+    <h1>JavaScript Syntax Practice</h1>
+
+    <script>
+      /*
+        Multi-line comment:
+        This is a multi-line comment.
+        This program stores a student's information
+        and prints it to the console.
+      */
+
+      // Single-line comment #1 3 Variables Declaration.
+      let developerName4 = "Tanzki";
+      let developerAge4 = 35;
+      let developerDramCareer4 = "To be a Full Stack Web Developer";
+
+      console.log("Name:" + developerName4);
+      console.log("Age:" + developerAge4);
+      console.log("Dream Career:" + developerDramCareer4);
+
+      // Single-line comment #2 3 code block using {}.
+      {
+        let developerSkillLevel4 = "Beginner";
+      }
+    </script>
+
+    <script>
+      // Code with error
+      // Rrror message on Chrome Console
+      // Uncaught SyntaxError: missing ) after argument list
+      console.log("Hello World");
+    </script>
+
+    <script>
+      //Corrected code
+      console.log("Hello World");
+    </script>
 
     <p>
       <b>Final Coding Challenge — JavaScript Developer Information System</b>
@@ -405,124 +486,119 @@
     </ul>
 
     <p><b>Code:</b></p>
-    <pre>
+    <pre id="code-details">
+    <p>Final Coding Challenge — JavaScript Developer Information System</p>  
       Project folder: lesson-04-challenge
       &lt;!DOCTYPE html&gt;
       &lt;html lang="en"&gt;
       &lt;head&gt;
-        &lt;title&gt;My JavaScript Learning Profile&lt;/title&gt;
+        &lt;title&gt;JavaScript Developer Information System&lt;/title&gt;
       &lt;/head&gt;
       &lt;body&gt;
-        &lt;h1&gt;My JavaScript Learning Profile&lt;/h1&gt;
+        &lt;h1&gt;JavaScript Developer Information System&lt;/h1&gt;
 
-        &lt;p id="profile"&gt;&lt;/p&gt;
+        &lt;p&gt;Welcome to my programming profile&lt;/p&gt;
+
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="country"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+        &lt;p id="dream-career"&gt;&lt;/p&gt;
 
         &lt;script&gt;
-          // ===== Section 1: Variables =====
-          // Variable developer Name.
-          let developerName5 = "Tanzki";
+          /*
+            Lesson 04 Challenge
+            Displays developer information on the page using textContent.
+          */
 
-          // Variable developer Age.
-          let developerAge5 = 35;
+          // Developer information variables
+          let developerName = "Tanzki";
+          let developerAge = 35;
+          let developerCountry = "Philippines";
+          let developerSkillLevel = "Beginner";
+          let developerDreamCareer = "To be a Full Stack Web Developer";
+          
+          // Log each value to the console
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Country: " + developerCountry);
+          console.log("Skill Level: " + developerSkillLevel);
+          console.log("Dream Career: " + developerDreamCareer);
 
-          // Variable developer Country.
-          let developerCountry5 = "Philippines";
-
-          // Variable developer Current Skill Level.
-          let developerCurrentSkillLevel5 = "Baginner";
-
-          // Variable developer Dream Career.
-          let developerDreamCareer5 = "To be a Full Stack Web Developer";
-
-          // ===== Section 2: Console Output =====
-          // Displays the five pieces of information in the Console
-          console.log(developerName5);
-          console.log(developerAge5);
-          console.log(developerCountry5);
-          console.log(developerSkillLevel5);
-          console.log(developerDreamCareer5);
-
-          // ===== Section 3: Display on the Web Page =====
-          // Variable for displaying the profile information
-          let profileElement = documen.getElementById("profile");
-
-          // Uses textContent to show the developer information in the HTML.
-          profileElement.textContent = 
-          "Developer Name: " + developerName5 + " | " + 
-          "Developer Age: " + developerAge5 + " | " + 
-          "Developer Country " + developerCountry4 " | " + 
-          "Developer Skill Level: " + developerSkillLevel5 " | " + 
-          "developer Dream Career: " + developerDreamCareer5;
-
-          // ===== Section 4: Debugging Challenge =====
-          // The following are intentional syntax mistakes (comments only):
-          // Mistake 1 - Missing quotation mark: let country = "Philippines;
-          // Mistake 2 - Missing closing parenthesis: console.log("Hello";
-          // Mistake 3 - Incorrect capitalization: Console.Log("Hello");
+          /*
+            The code block below groups all the statements
+            that display the information on the page.
+          */
+          {
+            console.log("Developer information");
+            document.getElementById("name").textContent = "Name :" + developerName;
+            document.getElementById("age").textContent = "Age :" + developerAge;
+            document.getElementById("country").textContent = "Country :" + developerCountry;
+            document.getElementById("skill-level").textContent = "Skill Level :" + developerSkillLevel;
+            document.getElementById("dream-career").textContent = "Dream Career :" + developerDreamCareer;
+            
+            // Confirm that the script finished without errors
+            console.log("Profile displayed successfully.");
+          }
         &lt;/script&gt; 
       
       &lt;/body&gt;
       &lt;/html&gt;   
     </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
 
     <p><b>Output:</b></p>
-    <h1>My JavaScript Learning Profile</h1>
+    <h1>JavaScript Developer Information System</h1>
 
-    <p id="profile"></p>
+    <p>Welcome to my programming profile</p>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="skill-level"></p>
+    <p id="dream-career"></p>
 
     <script>
-      // ===== Section 1: Variables =====
-      // Variable developer Name.
+      /*
+            Lesson 04 Challenge
+            Displays developer information on the page using textContent.
+          */
+
+      // Developer information variables
       let developerName5 = "Tanzki";
-
-      // Variable developer Age.
       let developerAge5 = 35;
-
-      // Variable developer Country.
       let developerCountry5 = "Philippines";
-
-      // Variable developer Current Skill Level.
-      let developerCurrentSkillLevel5 = "Baginner";
-
-      // Variable developer Dream Career.
+      let developerSkillLevel5 = "Beginner";
       let developerDreamCareer5 = "To be a Full Stack Web Developer";
 
-      // ===== Section 2: Console Output =====
-      // Displays the five pieces of information in the Console
-      console.log(developerName5);
-      console.log(developerAge5);
-      console.log(developerCountry5);
-      console.log(developerCurrentSkillLevel5);
-      console.log(developerDreamCareer5);
+      // Log each value to the console
+      console.log("Name: " + developerName5);
+      console.log("Age: " + developerAge5);
+      console.log("Country: " + developerCountry5);
+      console.log("Skill Level: " + developerSkillLevel5);
+      console.log("Dream Career: " + developerDreamCareer5);
 
-      // ===== Section 3: Display on the Web Page =====
-      // Variable for displaying the profile information
-      let profileElement = document.getElementById("profile");
+      /*
+            The code block below groups all the statements
+            that display the information on the page.
+          */
+      {
+        console.log("Developer information");
+        document.getElementById("name").textContent = "Name :" + developerName5;
+        document.getElementById("age").textContent = "Age :" + developerAge5;
+        document.getElementById("country").textContent =
+          "Country :" + developerCountry5;
+        document.getElementById("skill-level").textContent =
+          "Skill Level :" + developerSkillLevel5;
+        document.getElementById("dream-career").textContent =
+          "Dream Career :" + developerDreamCareer5;
 
-      // Uses textContent to show the developer information in the HTML.
-      profileElement.textContent =
-        "Developer Name: " +
-        developerName5 +
-        " | " +
-        "Developer Age: " +
-        developerAge5 +
-        " | " +
-        "Developer Country: " +
-        developerCountry5 +
-        " | " +
-        "Developer Current Skill Level: " +
-        developerCurrentSkillLevel5 +
-        " | " +
-        "Developer Dream Career: " +
-        developerDreamCareer5;
-
-      // ===== Section 4: Debugging Challenge =====
-      // The following are intentional syntax mistakes (comments only):
-      // Mistake 1 - Missing quotation mark: let country = "Philippines;
-      // Mistake 2 - Missing closing parenthesis: console.log("Hello";
-      // Mistake 3 - Incorrect capitalization: Console.Log("Hello");
+        // Confirm that the script finished without errors
+        console.log("Profile displayed successfully.");
+      }
     </script>
 
-    <p><b>Mini Quiz: Q1:-A Q2:-B Q3:-C Q4:-B Q5:-A Q6:-B Q7:-B</b></p>
+    <p><b>Mini Quiz: Q1:-B Q2:-A Q3:-C Q4:-B Q5:-A Q6:-B Q7:-B</b></p>
   </body>
 </html>
