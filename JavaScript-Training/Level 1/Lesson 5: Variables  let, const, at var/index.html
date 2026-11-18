@@ -10,24 +10,7 @@
   <body>
     <h1>LESSON 5: JavaScript Variables — let, const, at var</h1>
 
-    <pre id="code-details">
-      File: index.html
-      &lt;!DOCTYPE html&gt;
-      &lt;html lang="en"&gt;
-      &lt;head&gt;
-        &lt;title&gt;JavaScript Syntax Practice&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-
-        &lt;script&gt;
-
-        &lt;/script&gt;
-        
-      &lt;/body&gt;
-      &lt;/html&gt;
-    </pre>
-    <!-- Copy Button -->
-    <button class="copy-btn">Copy</button>
+    <p>Example Practice:</p>
 
     <pre id="code-details">
       File: index.html
@@ -38,7 +21,52 @@
       &lt;/head&gt;
       &lt;body&gt;
 
+        &lt;h1&gt;JavaScript Variables Practice&lt;/h1&gt;
+
+        &lt;h2&gt;Developer Information&lt;/h2&gt;
+
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="country"&gt;&lt;/p&gt;
+        &lt;p id="career"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+
         &lt;script&gt;
+
+          // Using const
+          const ddeveloperName = "Tanzki";
+          const developerCountry = "Philippines";
+          const dreamCareer = "Full Stack Developer";
+
+          // Using let
+          let developerAge = 35;
+          let skillevel = "Beginner";
+
+          // Reassigning let variables
+          developerAge = 36;
+          skillLevel = "Learning JavaScript";
+
+          // Using var
+          var learningStatus = "Currently Studying";
+
+          // Console output
+          console.log("Developer Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Country: " + developerCountry);
+          console.log("Dream Career: " + dreamCareer);
+          console.log("Skill Level: " + skill-level);
+          console.log("Learning Status: " + learningStatus);
+
+          // HTML output
+          document.getElementById("name").textContent = "Name: " + developerName;
+
+          document.getElementById("age").textContent = "Age: " + developerAge;
+
+          document.getElementById("country").textContent = "Country: " + developerCountry;
+
+          document.getElementById("career").textContent = "Dream Career: " + dreamCareer;
+
+          document.getElementById("skill").textContent = "Skill Level: " + skillLevel;
 
         &lt;/script&gt;
         
@@ -48,6 +76,668 @@
     <!-- Copy Button -->
     <button class="copy-btn">Copy</button>
 
-    <p><b>Mini Quiz:</b>Q1:-B Q2:-A Q3:-B Q4:-B Q5:-C Q6:-B Q7:-A</p>
+    <h3><b>Output:</b></h3>
+
+    <h1>JavaScript Variables Practice</h1>
+
+    <h2>Developer Information</h2>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="career"></p>
+    <p id="skill-level"></p>
+
+    <script>
+      console.log("Pracetice Example");
+      // Using const
+      const developerName = "Tanzki";
+      const developerCountry = "Philippines";
+      const dreamCareer = "Full Stack Developer";
+
+      // Using let
+      let developerAge = 35;
+      let skillLevel = "Beginner";
+
+      // Reassigning let variables
+      developerAge = 36;
+      skillLevel = "Learning JavaScript";
+
+      // Using var
+      var learningStatus = "Currently Studying";
+
+      // Console output
+      console.log("Developer Name: " + developerName);
+      console.log("Age: " + developerAge);
+      console.log("Country: " + developerCountry);
+      console.log("Dream Career: " + dreamCareer);
+      console.log("Skill Level: " + skillLevel);
+      console.log("Learning Status: " + learningStatus);
+
+      // HTML output
+      document.getElementById("name").textContent = "Name: " + developerName;
+
+      document.getElementById("age").textContent = "Age: " + developerAge;
+
+      document.getElementById("country").textContent =
+        "Country: " + developerCountry;
+
+      document.getElementById("career").textContent =
+        "Dream Career: " + dreamCareer;
+
+      document.getElementById("skill-level").textContent =
+        "Skill Level: " + skillLevel;
+
+      console.log("");
+      console.log("======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #1 -->
+    <h3>Exercise 1 — Using let</h3>
+
+    <p>File: exercise-01.html</p>
+
+    <p>Gumawa ng program na gumagamit ng let.</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng variable na developerName.</li>
+      <li>Gumawa ng variable na developerAge.</li>
+      <li>Gumawa ng variable na skillLevel.</li>
+      <li>I-display ang original values gamit ang console.log().</li>
+      <li>Palitan ang value ng developerAge.</li>
+      <li>Palitan ang value ng skillLevel.</li>
+      <li>I-display ulit ang updated values.</li>
+    </ol>
+
+    <pre id="code-details">
+      <p>Exercise 1</p>
+      <p>File: exercise-01.html</p>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Exercise 1&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;Using let&lt;/h1&gt;
+
+        &lt;script&gt;
+          // Original Developer Information
+          let developerName = "Tanzki";
+          let developerAge = 35;
+          let skillLevel = "Beginner";
+
+          // Console Output
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Skill Level: " + skillLevel);
+
+          // Updated Developer Information
+          developerAge = 36;
+          skillLevel = "Intermediate";
+          // Console Output
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Skill Level: " + skillLevel);
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+    <h1>Using let</h1>
+
+    <script>
+      console.log("Exercise #1");
+      // Original Developer Information
+      let developerName2 = "Tanzki";
+      let developerAge2 = 35;
+      let skillLevel2 = "Beginner";
+
+      // Console Output
+      console.log("Name: " + developerName2);
+      console.log("Age: " + developerAge2);
+      console.log("Skill Level: " + skillLevel2);
+
+      // Updated Developer Information
+      developerAge2 = 36;
+      skillLevel2 = "Intermediate";
+      // Console Output
+      console.log("Name: " + developerName2);
+      console.log("Age: " + developerAge2);
+      console.log("Skill Level: " + skillLevel2);
+
+      console.log("");
+      console.log("======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #2 -->
+    <h3>Exercise 2 — Using const</h3>
+
+    <p>File: exercise-02.html</p>
+
+    <p>Gumawa ng program na gumagamit ng const.</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>
+        Gumawa ng const variable para sa:
+        <ul>
+          <li>developerName</li>
+          <li>developerCountry</li>
+          <li>dreamCareer</li>
+          <li>currentCourse</li>
+        </ul>
+      </li>
+      <li>I-display ang apat na values gamit ang console.log().</li>
+      <li>Huwag i-reassign ang anumang const variable.</li>
+      <li>
+        Maglagay ng comments na nagpapaliwanag kung bakit const ang ginamit mo.
+      </li>
+    </ol>
+
+    <pre id="code-details">
+      <p>Exercise 2</p>
+      <p>File: exercise-02.html</p>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Exercise 2&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;Using const&lt;/h1&gt;
+
+        &lt;script&gt;
+          // I used const for these variables because their values
+          // are not supposed to change while the program runs.
+          
+          // My Name, Is the right choice in this program
+          const developerName = "Tanzki";
+          // My Country
+          const developerCountry = "Philippines";
+          // My Dream Career, Information in this program
+          const dreamCareer = "To be a Full Stack Web Developer";
+          // My Current Course, I don't need to reassign it in this program
+          const currentCourse = "JavaScript";
+
+          // Display the four values using console.log()
+          console.log("Name: " + developerName);
+          console.log("Country: " + developerCountry);
+          console.log("Dream Career: " + dreamCareer);
+          console.log("Current Course: " + currentCourse);
+
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Outout:</b></h3>
+
+    <h1>Using const</h1>
+
+    <script>
+      console.log("Exercise #2");
+      // I used `const` for all of these variables because their values.
+      // Are not supposed to change while the program runs
+
+      // My Name, Is the right choice in this program
+      const developerName3 = "Tanzki";
+      // My Country
+      const developerCountry3 = "Philippines";
+      // My Dream Career, Information in this program
+      const dreamCareer3 = "To be a Full Stack Web Developer";
+      // My Current Course, I don't need to reassign it in this program
+      const currentCourse3 = "JavaScript";
+
+      // Display the four values using console.log()
+      console.log("Name: " + developerName3);
+      console.log("Country: " + developerCountry3);
+      console.log("Dream Career: " + dreamCareer3);
+      console.log("Current Course: " + currentCourse3);
+
+      console.log("");
+      console.log("======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #3 -->
+    <h3>Exercise 3 — Comparing let, const, and var</h3>
+
+    <p>File: exercise-03.html</p>
+
+    <p>Gumawa ng program na nagpapakita ng pagkakaiba ng tatlong keywords.</p>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>Gumawa ng isang variable gamit ang let.</li>
+      <li>Gumawa ng isang variable gamit ang const.</li>
+      <li>Gumawa ng isang variable gamit ang var.</li>
+      <li>I-display ang original values.</li>
+      <li>I-reassign ang let variable.</li>
+      <li>I-reassign ang var variable.</li>
+      <li>I-display ang updated values.</li>
+      <li>Huwag i-reassign ang const variable.</li>
+      <li>Gumamit ng comments para ipaliwanag ang bawat keyword.</li>
+    </ol>
+
+    <p>Additional debugging task:</p>
+
+    <p>Gumawa ng hiwalay na test para sa dalawang error:</p>
+    <ul>
+      <li>Subukang i-reassign ang const.</li>
+      <li>
+        Subukang i-declare ulit ang parehong let variable sa iisang scope.
+      </li>
+    </ul>
+
+    <p>
+      I-save ang error messages na nakita mo sa Chrome Console. Ibalik ang code
+      sa tamang kondisyon pagkatapos ng test.
+    </p>
+
+    <pre id="code-details">
+      <p>Exercise 3</p>
+      <p>File: index.html</p>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Exercise 3&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;Comparing let, const, and var&lt;/h1&gt;
+
+
+        &lt;script&gt;
+          // `const` declares a variable whose value CANNOT be reassigned.
+          const developerName = "Tanzki";
+
+          // `let` declares a variable whose value CAN be reassigned later.
+          let developerAge = 35;
+
+          // `var` is the older way to declare a variable. It CAN be reassigned
+          var dreamCareer = "JavaScript Developer";
+
+          // Display the original values
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Dream Career: " + dreamCareer);
+
+          // The developerName variable uses const, so it will not be reassigned.
+
+          // Reassign the `let` variable (allowed)
+          developerAge = 36;
+
+          // Reassign the `var` variable (allowed)
+          dreamCareer = "Full Stack Web Developer";
+          
+          // Display the updated values
+          console.log("--- Updated values ---");
+          console.log("Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Dream Career: " + dreamCareer);
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <h1>Comparing let, const, and var</h1>
+
+    <script>
+      console.log("Exercise #3");
+
+      // `const` declares a variable whose value CANNOT be reassigned.
+      const developerName4 = "Tanzki";
+
+      // `let` declares a variable whose value CAN be reassigned later.
+      let developerAge4 = 35;
+
+      // `var` is the older way to declare a variable. It CAN be reassigned
+      var dreamCareer4 = "JavaScript Developer";
+
+      // Display the original values
+      console.log("Name: " + developerName4);
+      console.log("Age: " + developerAge4);
+      console.log("Dream Career: " + dreamCareer4);
+
+      // The `const` variable (developerName) is NOT reassigned, because that
+      developerName4;
+
+      // Reassign the `let` variable (allowed)
+      developerAge4 = 36;
+
+      // Reassign the `var` variable (allowed)
+      dreamCareer4 = "Full Stack Web Developer";
+
+      // Display the updated values
+      console.log("--- Updated values ---");
+      console.log("Name: " + developerName4);
+      console.log("Age: " + developerAge4);
+      console.log("Dream Career: " + dreamCareer4);
+
+      console.log("");
+      console.log("======================");
+    </script>
+
+    <hr />
+
+    <!-- CHALLENGE CODING -->
+    <h3>
+      Final Coding Challenge — Developer Profile Variable Management System
+    </h3>
+
+    <p>Project folder: lesson-05-challenge</p>
+
+    <p>
+      Gagawa ka ng maliit na Developer Profile System na gumagamit ng let at
+      const.
+    </p>
+
+    <p><b></b></p>
+    <p>Gumawa ng webpage na may:</p>
+    <ol type="A">
+      <li>
+        <b>HTML Requirements</b>
+        <p>Gumawa ng webpage na may:</p>
+        <ul>
+          <li>Heading: Developer Profile Management System</li>
+          <li>Paragraph: My JavaScript Variable Management Project</li>
+          <li>HTML elements para sa:</li>
+          <ul>
+            <li>Name</li>
+            <li>Age</li>
+            <li>Country</li>
+            <li>Skill Level</li>
+            <li>Dream Career</li>
+            <li>Learning Status</li>
+          </ul>
+        </ul>
+      </li>
+      <li>
+        <b>JavaScript Requirements</b>
+        <p>Gumawa ng variables:</p>
+        <p>Gamit ang const:</p>
+        <ul>
+          <li>developerName</li>
+          <li>developerCountry</li>
+          <li>dreamCareer</li>
+          <li>currentCourse</li>
+        </ul>
+        <p>Gamit ang let:</p>
+        <ul>
+          <li>developerAge</li>
+          <li>skillLevel</li>
+          <li>learningStatus</li>
+        </ul>
+        <p>Pagkatapos:</p>
+        <ol>
+          <li>I-display ang lahat ng information sa HTML page.</li>
+          <li>I-display ang lahat ng information sa Console.</li>
+          <li>I-update ang developerAge.</li>
+          <li>I-update ang skillLevel.</li>
+          <li>I-update ang learningStatus.</li>
+          <li>I-display ulit ang updated information sa HTML page.</li>
+          <li>Gumamit ng comments para ipaliwanag ang code.</li>
+          <li>Gumamit ng tamang semicolon at camelCase naming convention.</li>
+        </ol>
+      </li>
+      <li>
+        <b>Additional Challenge</b>
+        <p>Magdagdag ng dalawang buttons:</p>
+        <ul>
+          <li>Update Skill Level</li>
+          <li>Update Learning Status</li>
+        </ul>
+        <p>Kapag pinindot ang buttons:</p>
+        <ul>
+          <li>Baguhin ang value ng kaukulang let variable.</li>
+          <li>I-update ang HTML output.</li>
+          <li>Ipakita ang bagong value sa Console.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      <b>Hint:</b> Maaari mong gamitin ang addEventListener() na natutuhan mo sa
+      Lesson 2.
+    </p>
+    <p>
+      Hindi mo kailangang gumamit ng bagong concepts maliban sa mga natutuhan mo
+      na.
+    </p>
+
+    <pre id="code-details">
+      <p>Final Coding Challenge</p>
+      <p>File: index.html</p>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Final Coding Challenge&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Developer Profile Management System&lt;/h1&gt;
+        &lt;p&gt;My JavaScript Variable Management Project&lt;/p&gt;
+
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="country"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+        &lt;p id="dream-career"&gt;&lt;/p&gt;
+        &lt;p id="current-course"&gt;&lt;/p&gt;
+        &lt;p id="learning-status"&gt;&lt;/p&gt;
+
+        &lt;button id="updateSkillBtn"&gt;Update Skill Level&lt;/button&gt;
+        &lt;button id="updateStatusBtn"&gt;Update Learning Status&lt;/button&gt;
+
+        &lt;script&gt;
+
+          // Using Const Variable
+          const developerName = "Tanzki";
+          const developerCountry = "Philippines";
+          const dreamCareer = "To become a Full Stack Web Developer";
+          const currentCourse = "JavaScript";
+
+          // Using Let Variable
+          let developerAge = 35;
+          let skillLevel = "Beginner";
+          let learningStatus = "Skill Level 1, Lesson 5: Variables let, const, at var";
+
+          // Reassign the `let` variable
+          developerAge = 36;
+          skillLevel = "Intermediate";
+          learningStatus = "Next Skill Level 1, Lesson 6: Data Types";
+
+          // Create a function to display developer information
+          function displayDeveloperInfo() {
+            document.getElementById("name").textContent =
+                "Name: " + developerName;
+
+            document.getElementById("age").textContent =
+                "Age: " + developerAge;
+
+            document.getElementById("country").textContent =
+                "Country: " + developerCountry;
+
+            document.getElementById("skill-level").textContent =
+                "Skill Level: " + skillLevel;
+
+            document.getElementById("dream-career").textContent =
+                "Dream Career: " + dreamCareer;
+
+            document.getElementById("current-course").textContent =
+                "Current Course: " + currentCourse;
+
+            document.getElementById("learning-status").textContent =
+                "Learning Status: " + learningStatus;
+          }
+
+          // Display the initial developer information
+          displayDeveloperInfo();
+
+
+          // Display developer information in the console
+          console.log("Developer Information");
+          console.log("Name:", developerName);
+          console.log("Age:", developerAge);
+          console.log("Country:", developerCountry);
+          console.log("Skill Level:", skillLevel);
+          console.log("Dream Career:", dreamCareer);
+          console.log("Current Course:", currentCourse);
+          console.log("Learning Status:", learningStatus);
+
+          // Update the skill level when the button is clicked
+          document.getElementById("updateSkillBtn")
+          .addEventListener("click", function () {
+
+            skillLevel = "Advanced";
+
+            displayDeveloperInfo();
+
+            console.log("New Skill Level:", skillLevel);
+          });
+
+          // Update the learning status when the button is clicked
+          document.getElementById("updateStatusBtn")
+          .addEventListener("click", function () {
+
+            learningStatus = "Next Skill Level 2, Lesson 13: if Statement";
+
+            displayDeveloperInfo();
+
+            console.log("New Learning Status:", learningStatus);
+          });
+
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <h1>Developer Profile Management System</h1>
+    <p>My JavaScript Variable Management Project</p>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="skill-level"></p>
+    <p id="dream-career"></p>
+    <p id="current-course"></p>
+    <p id="learning-status"></p>
+
+    <button id="updateSkillBtn">Update Skill Level</button>
+    <button id="updateStatusBtn">Update Learning Status</button>
+
+    <script>
+      // Using Const Variable
+      const developerName5 = "Tanzki";
+      const developerCountry5 = "Philippines";
+      const dreamCareer5 = "To become a Full Stack Web Developer";
+      const currentCourse5 = "JavaScript";
+
+      // Using Let Variable
+      let developerAge5 = 35;
+      let skillLevel5 = "Beginner";
+      let learningStatus5 =
+        "Skill Level 1, Lesson 5: Variables let, const, at var";
+
+      // Reassign the `let` variable
+      developerAge5 = 36;
+      skillLevel5 = "Intermediate";
+      learningStatus5 = "Next Skill Level 1, Lesson 6: Data Types";
+
+      // Create a function to display developer information
+      function displayDeveloperInfo() {
+        document.getElementById("name").textContent = "Name: " + developerName5;
+
+        document.getElementById("age").textContent = "Age: " + developerAge5;
+
+        document.getElementById("country").textContent =
+          "Country: " + developerCountry5;
+
+        document.getElementById("skill-level").textContent =
+          "Skill Level: " + skillLevel5;
+
+        document.getElementById("dream-career").textContent =
+          "Dream Career: " + dreamCareer5;
+
+        document.getElementById("current-course").textContent =
+          "Current Course: " + currentCourse5;
+
+        document.getElementById("learning-status").textContent =
+          "Learning Status: " + learningStatus5;
+      }
+
+      // Display the initial developer information
+      displayDeveloperInfo();
+
+      // Display developer information in the console
+      console.log("Developer Information");
+      console.log("Name:", developerName5);
+      console.log("Age:", developerAge5);
+      console.log("Country:", developerCountry5);
+      console.log("Skill Level:", skillLevel5);
+      console.log("Dream Career:", dreamCareer5);
+      console.log("Current Course:", currentCourse5);
+      console.log("Learning Status:", learningStatus5);
+
+      // Update the skill level when the button is clicked
+      document
+        .getElementById("updateSkillBtn")
+        .addEventListener("click", function () {
+          skillLevel5 = "Advanced";
+
+          displayDeveloperInfo();
+
+          console.log("New Skill Level:", skillLevel5);
+        });
+
+      // Update the learning status when the button is clicked
+      document
+        .getElementById("updateStatusBtn")
+        .addEventListener("click", function () {
+          learningStatus5 = "Next Skill Level 2, Lesson 13: if Statement";
+
+          displayDeveloperInfo();
+
+          console.log("New Learning Status:", learningStatus5);
+        });
+    </script>
+
+    <hr />
+    <pre id="code-details">
+      <h3>Mini Quiz — Lesson 5</h3>
+      <ul>
+        <li>Q1:- B</li>
+        <li>Q2:- A</li>
+        <li>Q3:- B</li>
+        <li>Q4:- B</li>
+        <li>Q5:- C</li>
+        <li>Q6:- A</li>
+        <li>Q7:- B</li>
+      </ul>
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
   </body>
 </html>

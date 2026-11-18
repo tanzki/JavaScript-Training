@@ -4,9 +4,945 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Lesson 6</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>Lesson 6 — Data Types</h1>
+    <h1>LESSON 6: JavaScript Data Types</h1>
+
+    <p>Example Practice:</p>
+
+    <pre id="code-details">
+      File: index.html
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Data Types Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;JavaScript Data Types Practice&lt;/h1&gt;
+
+        &lt;h2&gt;Developer Information&lt;/h2&gt;
+
+        &lt;p id="name"&gt;&lt;/h2&gt;
+        &lt;p id="age"&gt;&lt;/h2&gt;
+        &lt;p id="is-learning"&gt;&lt;/h2&gt;
+        &lt;p id="skill-level"&gt;&lt;/h2&gt;
+        &lt;p id="selected-course"&gt;&lt;/h2&gt;
+
+        &lt;script&gt;
+          // String
+          const developerName = "Tanzki";
+          const skillLevel = "Beginner";
+
+          // Number
+          const developerAge = 35;
+
+          // Boolean
+          const isLearning = true;
+
+          // Undefined
+          let selectedCourse;
+
+          // Null
+          let completedCourse = false;
+
+          // Object
+          const developer = {
+            name = "Tanzki",
+            country = "Philippines",
+            career = "Full Stack Web Developer"
+          };
+
+          // Array 
+          const programmingLanguage = [
+            "JavaScript",
+            "PHP",
+            "Python"
+          ];
+
+          // Console Output
+          console.log("Developer Name: " + developerName);
+          console.log("Age: " + developerAge);
+          console.log("Is Learning: " + isLearning);
+          console.log("Skill Level: " + skillLevel);
+          console.log("Selected Course: " + selectedCourse);
+          console.log("Completed Course: " + completedCourse);
+          console.log("Developer Object: " + developer);
+          console.log("Programming Languages: " + programmingLanguage);
+
+          // Data Type Checking
+          console.log(typeof developerName);
+          console.log(typeof developerAge);
+          console.log(typeof isLearning);
+          console.log(typeof skillLevel);
+          console.log(typeof selectedCourse);
+          console.log(typeof completedCourse);
+          console.log(typeof developer);
+          console.log(Array.isArray(programmingLanguages));
+
+          // HTML Output
+          document.getElementById("name").textContent = "Name: " + developerName;
+
+          document.getElementById("age").textContent = "Age: " + developerAge;
+
+          document.getElementById("is-learning").textContent = "Is Learning: " + isLearning;
+
+          document.getElementById("skill-level").textContent = "Skill Level: " + skillLevel;
+
+          document.getElementById("selected-course").textContent = "Selected Curse: " + selectedCourse;
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <h1>JavaScript Data Types Practice</h1>
+
+    <h2>Developer Information</h2>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="is-learning"></p>
+    <p id="skill-level"></p>
+    <p id="selected-course"></p>
+    <p id="completedCourse"></p>
+    <p id="selected-course"></p>
+    <p id="programming-language"></p>
+
+    <script>
+      console.log("PRACTICE:");
+
+      // String
+      const developerName = "Tanzki";
+      const skillLevel = "Beginner";
+
+      // Number
+      const developerAge = 35;
+
+      // Boolean
+      const isLearning = true;
+
+      // Undefined
+      let selectedCourse;
+
+      // Null
+      let completedCourse = false;
+
+      // Object
+      const developer = {
+        name: "Tanzki",
+        country: "Philippines",
+        career: "Full Stack Web Developer",
+      };
+
+      // Array
+      const programmingLanguage = ["JavaScript", "PHP", "Python"];
+
+      // Console Output
+      console.log("Developer Name: " + developerName);
+      console.log("Age: " + developerAge);
+      console.log("Is Learning: " + isLearning);
+      console.log("Skill Level: " + skillLevel);
+      console.log("Selected Course: " + selectedCourse);
+      console.log("Completed Course: " + completedCourse);
+      console.log("Developer Object: " + developer);
+      console.log("Programming Languages: " + programmingLanguage);
+
+      // Data Type Checking
+      console.log(typeof developerName);
+      console.log(typeof developerAge);
+      console.log(typeof isLearning);
+      console.log(typeof skillLevel);
+      console.log(typeof selectedCourse);
+      console.log(typeof completedCourse);
+      console.log(typeof developer);
+      console.log(Array.isArray(programmingLanguage));
+
+      // HTML Output
+      document.getElementById("name").textContent = "Name: " + developerName;
+
+      document.getElementById("age").textContent = "Age: " + developerAge;
+
+      document.getElementById("is-learning").textContent =
+        "Is Learning: " + isLearning;
+
+      document.getElementById("skill-level").textContent =
+        "Skill Level: " + skillLevel;
+
+      document.getElementById("selected-course").textContent =
+        "Selected Curse: " + selectedCourse;
+      document.getElementById("programming-language").textContent =
+        "Selected Curse: " + programmingLanguage;
+
+      console.log("=======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #1 -->
+    <h3><b>Exercise 1 — Identifying Data Types</b></h3>
+
+    <p>File: exercise-01.html</p>
+
+    <p>Gumawa ng JavaScript program na may sumusunod na variables:</p>
+    <ol>
+      <li>developerName — String</li>
+      <li>developerAge — Number</li>
+      <li>isLearningJavaScript — Boolean</li>
+      <li>developerSkill — Undefined</li>
+      <li>selectedCourse — Null</li>
+    </ol>
+    <p>Requirements:</p>
+    <ul>
+      <li>Gumamit ng tamang variable declarations.</li>
+      <li>I-display ang lahat ng values gamit ang console.log().</li>
+      <li>Gamitin ang typeof para malaman ang data type ng bawat variable.</li>
+      <li>Maglagay ng comments.</li>
+    </ul>
+
+    <!-- Exercise #1 Code -->
+    <h4><b>Code:</b></h4>
+    <pre id="code-details">
+      <p>Exercise 1</p>
+      <p>File: exercise-01.html</p>
+
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Data Types Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;script&gt;
+          console.log("EXERCISE #1");
+
+          // String
+          const developerName = "Tanzki";
+          
+          // Number
+          const developerAge = 35;
+
+          // Boolean
+          let isLearning = true;
+
+          // Undefined
+          let developerSkill;
+
+          // Null
+          let selectedCourse = false;
+
+          // Console Output;
+          console.log(selectedCourse);
+          console.log(developerName);
+          console.log(developerAge);
+          console.log(isLearning);
+          console.log(developerSkill);
+          console.log(selectedCourse);
+
+
+          // Data Type Checking.
+          console.log("--- Developer Information ---");
+          console.log(typeof developerName);
+          console.log(typeof developerAge);
+          console.log(typeof isLearning);
+          console.log(typeof developerSkill);
+          console.log(typeof selectedCourse);
+        &lt;/script&gt;
+                
+      &lt;/body&gt;
+      &lt;/html&gt;
+      
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <script>
+      console.log("EXERCISE #1");
+
+      // String
+      const developerName2 = "Tanzki";
+
+      // Number
+      const developerAge2 = 35;
+
+      // Boolean
+      let isLearning2 = true;
+
+      // Undefined
+      let developerSkill2;
+
+      // Null
+      let selectedCourse2 = null;
+
+      // Console Output;
+      console.log("--- Developer Information ---");
+      console.log("Name: " + developerName2);
+      console.log("Age: " + developerAge2);
+      console.log("Is Learning JavaScript: " + isLearning2);
+      console.log("Developer Skill: " + developerSkill2);
+      console.log("Selected Course: " + selectedCourse2);
+
+      console.log("");
+
+      // Data Type Checking.
+      console.log("--- Data Types ---");
+      console.log(typeof developerName2);
+      console.log(typeof developerAge2);
+      console.log(typeof isLearning2);
+      console.log(typeof developerSkill2);
+      console.log(typeof selectedCourse2);
+
+      console.log("=======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #2 -->
+    <h3><b>Exercise 2 — Working with Objects and Arrays</b></h3>
+
+    <p>File: exercise-02.html</p>
+    <p>Developer Object</p>
+    <p>Dapat may properties na:</p>
+    <ul>
+      <li>name</li>
+      <li>age</li>
+      <li>country</li>
+      <li>dreamCareer</li>
+    </ul>
+
+    <p>Programming Languages Array</p>
+    <p>Dapat may tatlong programming languages.</p>
+    <p>Requirements:</p>
+    <ol>
+      <li>I-display ang buong object.</li>
+      <li>I-display ang bawat object property.</li>
+      <li>I-display ang buong array.</li>
+      <li>I-display ang bawat array item gamit ang index.</li>
+      <li>Gamitin ang typeof sa object at array.</li>
+      <li>1. Gamitin ang Array.isArray() para ma-verify ang array.</li>
+    </ol>
+
+    <!-- Exercise #2 Code -->
+    <h4><b>Code:</b></h4>
+    <pre id="code-details">
+      <p>Exercise 2</p>
+      <p>File: exercise-02.html</p>
+
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Data Types Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;script&gt;
+
+          // Developer Object
+          const developer = {
+            name: "Tanzki",
+            age: 35,
+            country: "Philippines",
+            dreamCareer: "To be a Full Stack Web Developer",
+          };
+
+          // Programming Languages Array
+          const programmingLaguages = ["JavaScript","PHP","Python"];
+
+          // Display whole Object
+          console.log("--- Whole Object ---");
+          console.log(developer);
+
+          // Display whole Object Propety
+          console.log("--- Whole Object Property ---");
+          console.log("Name: " + developer3.name);
+          console.log("Age: " + developer3.age);
+          console.log("Country: " + developer3.country);
+          console.log("Dream Career: " + developer3.dreamCareer);
+
+          // Display whole Array
+          console.log("--- Whole Array ---");
+          console.log(programmingLaguages);
+
+          // Display each Array
+          console.log("--- Each Array ---");
+          console.log("1st Language: " + programmingLaguages3[0]);
+          console.log("2nd Language: " + programmingLaguages3[1]);
+          console.log("3rd Language: " + programmingLaguages3[2]);
+
+          // Used typeof on objet and array
+          console.log("--- typeof on Object and Array ---");
+          console.log("typeof Developer: " + typeof developer3);
+          console.log(
+            "typeof Programming Laguages: " + typeof programmingLaguages3,
+          );
+
+          // Verify array using Array.isArray()
+          console.log("--- Verify Array.isArray() ---");
+          console.log(
+            "Is Programming Languages an array? " +
+              Array.isArray(programmingLaguages3),
+          );
+
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+      
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <script>
+      console.log("EXERCISE #2");
+      // Developer Object
+      const developer3 = {
+        name: "Tanzki",
+        age: 35,
+        country: "Philippines",
+        dreamCareer: "To be a Full Stack Web Developer",
+      };
+
+      // Programming Languages Array
+      const programmingLaguages3 = ["JavaScript", "PHP", "Python"];
+
+      // Display whole Object
+      console.log("--- Whole Object ---");
+      console.log(developer);
+
+      // Display whole Object Propety
+      console.log("--- Whole Object Property ---");
+      console.log("Name: " + developer3.name);
+      console.log("Age: " + developer3.age);
+      console.log("Country: " + developer3.country);
+      console.log("Dream Career: " + developer3.dreamCareer);
+
+      // Display whole Array
+      console.log("--- Whole Array ---");
+      console.log(programmingLaguages3);
+
+      // Display each Array
+      console.log("--- Each Array ---");
+      console.log("1st Language: " + programmingLaguages3[0]);
+      console.log("2nd Language: " + programmingLaguages3[1]);
+      console.log("3rd Language: " + programmingLaguages3[2]);
+
+      // Used typeof on objet and array
+      console.log("--- typeof on Object and Array ---");
+      console.log("typeof Developer: " + typeof developer3);
+      console.log(
+        "typeof Programming Laguages: " + typeof programmingLaguages3,
+      );
+
+      // Verify array using Array.isArray()
+      console.log("--- Verify Array.isArray() ---");
+      console.log(
+        "Is Programming Languages an array? " +
+          Array.isArray(programmingLaguages3),
+      );
+
+      console.log("=======================");
+    </script>
+
+    <hr />
+
+    <!-- EXERCISE #3 -->
+    <h3><b>Exercise 3 — Data Type Identification System</b></h3>
+
+    <p>File: exercise-03.html</p>
+
+    <p>Gumawa ng program na may walong variables:</p>
+    <ul>
+      <li>String</li>
+      <li>Number</li>
+      <li>Boolean</li>
+      <li>Undefined</li>
+      <li>Null</li>
+      <li>Object</li>
+      <li>Array</li>
+      <li>Another String containing numbers</li>
+    </ul>
+
+    <p>Requirements:</p>
+    <ol>
+      <li>I-display ang lahat ng values.</li>
+      <li>I-display ang typeof result ng bawat variable.</li>
+      <li>Gumamit ng Array.isArray() sa array.</li>
+      <li>
+        Ipaliwanag sa comments ang pagkakaiba ng Number at String na parehong
+        may numerical-looking values.
+      </li>
+    </ol>
+
+    <!-- Exercise #3 Code -->
+    <h4><b>Code:</b></h4>
+    <pre id="code-details">
+      <p>Exercise 3</p>
+      <p>File: exercise-03.html</p>
+
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Data Types Practice&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;script&gt;
+          console.log("EXERCISE #3");
+          // Using const variable
+          const developerName6 = "Tanzki";
+          const age6 = 35;
+          const isLearning6 = true;
+          const developer6 = {
+            name: "Tanzki",
+            age: 35,
+            country: "Philippines",
+            dreamCareer: "To be a Full Stack Web Developer",
+          };
+          const progammingLaguage6 = ["JavaScript", "PHP", "Python"];
+
+          // Using let variable
+          const selectedCourse6 = null;
+          let completedCourse6;
+          let lessonNumber6 = "6";
+
+          // Display all value from console.log()
+          console.log("Name: " + developerName6);
+          console.log("Age: " + age6);
+          console.log("Is Learning: " + isLearning6);
+          console.log("Selected Course: " + selectedCourse6);
+          console.log("Completed Course: " + completedCourse6);
+          console.log("Developer: " + developer6);
+          console.log("Programming Learning: " + progammingLaguage6);
+          console.log("Lesson Number: " + lessonNumber6);
+
+          console.log("");
+
+          // Display all typeof value from console.log()
+          console.log(typeof developerName6);
+          console.log(typeof age6);
+          console.log(typeof isLearning6);
+          console.log(typeof selectedCourse6);
+          console.log(typeof completedCourse6);
+          console.log(typeof developer6);
+          console.log(typeof progammingLaguage6);
+          console.log(typeof lessonNumber6);
+
+          //  Using Array.isArray()
+          console.log(
+            "Is Programming Languages an array? " +
+              Array.isArray(progammingLaguage6),
+          );
+
+          /*
+            Number vs String with numerical-looking values:
+            A Number like 35 is a numeric value, so 35 + 5 gives 40.
+            A String like "35" is text, so "35" + 5 gives "355"
+            because JavaScript joins the characters instead of adding.
+            Use a Number for calculations and a String for values such as
+            phone numbers, which keep leading zeros and are never used in math.
+          */
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+      
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="career"></p>
+    <p id="skill-level"></p>
+
+    <script>
+      console.log("EXERCISE #3");
+      // Using const variable
+      const developerName6 = "Tanzki";
+      const age6 = 35;
+      const isLearning6 = true;
+      const developer6 = {
+        name: "Tanzki",
+        age: 35,
+        country: "Philippines",
+        dreamCareer: "To be a Full Stack Web Developer",
+      };
+      const progammingLaguage6 = ["JavaScript", "PHP", "Python"];
+
+      // Using let variable
+      const selectedCourse6 = null;
+      let completedCourse6;
+      let lessonNumber6 = "6";
+
+      // Display all value from console.log()
+      console.log("Name: " + developerName6);
+      console.log("Age: " + age6);
+      console.log("Is Learning: " + isLearning6);
+      console.log("Selected Course: " + selectedCourse6);
+      console.log("Completed Course: " + completedCourse6);
+      console.log("Developer: " + developer6);
+      console.log("Programming Learning: " + progammingLaguage6);
+      console.log("Lesson Number: " + lessonNumber6);
+
+      console.log("");
+
+      // Display all typeof value from console.log()
+      console.log(typeof developerName6);
+      console.log(typeof age6);
+      console.log(typeof isLearning6);
+      console.log(typeof selectedCourse6);
+      console.log(typeof completedCourse6);
+      console.log(typeof developer6);
+      console.log(typeof progammingLaguage6);
+      console.log(typeof lessonNumber6);
+
+      //  Using Array.isArray()
+      console.log(
+        "Is Programming Languages an array? " +
+          Array.isArray(progammingLaguage6),
+      );
+
+      /*
+        Number vs String with numerical-looking values:
+        A Number like 35 is a numeric value, so 35 + 5 gives 40.
+        A String like "35" is text, so "35" + 5 gives "355"
+        because JavaScript joins the characters instead of adding.
+        Use a Number for calculations and a String for values such as
+        phone numbers, which keep leading zeros and are never used in math.
+      */
+
+      console.log("=======================");
+    </script>
+
+    <hr />
+
+    <!-- Coding Challenge -->
+    <h3>
+      <b>Final Coding Challenge — Developer Data Type Information System</b>
+    </h3>
+    <p>File: challenge.html</p>
+
+    <p>
+      Gagawa ka ng Developer Information System na nagpapakita ng iba't ibang
+      JavaScript data types.
+    </p>
+
+    <ol type="A">
+      <li>
+        <b>HTML Requirements</b>
+        <p>Gumawa ng webpage na may:</p>
+        <ul>
+          <li>Heading: Developer Data Type Information System</li>
+          <li>Developer Information section</li>
+          <li>Data Types section</li>
+          <li>Object Information section</li>
+          <li>Programming Languages section</li>
+        </ul>
+      </li>
+      <li>
+        <b>JavaScript Requirements</b>
+        <p>Gumawa ng variables:</p>
+        <b>String</b>
+        <ul>
+          <li>developerName</li>
+          <li>developerCountry</li>
+          <li>dreamCareer</li>
+        </ul>
+        <b>Number</b>
+        <ul>
+          <li>developerAge</li>
+          <li>yearsOfExperience</li>
+        </ul>
+        <b>Boolean</b>
+        <ul>
+          <li>isLearningJavaScript</li>
+          <li>isFullStackDeveloper</li>
+        </ul>
+        <b>Undefined</b>
+        <ul>
+          <li>selectedProject</li>
+        </ul>
+        <b>Null</b>
+        <ul>
+          <li>completedProject</li>
+        </ul>
+        <b>Object</b>
+        <ul>
+          <li>developerProfile</li>
+        </ul>
+        <b>Array</b>
+        <ul>
+          <li>programmingLanguages</li>
+        </ul>
+      </li>
+      <li>
+        <b>Functional Requirements</b>
+        <ol>
+          <li>I-display ang lahat ng variables sa Console.</li>
+          <li>I-display ang developer information sa webpage.</li>
+          <li>I-display ang data types gamit ang typeof.</li>
+          <li>I-display ang object properties.</li>
+          <li>I-display ang array items.</li>
+          <li>Gamitin ang Array.isArray() para ma-verify ang array.</li>
+          <li>Gumamit ng comments para ipaliwanag ang bawat data type.</li>
+        </ol>
+      </li>
+      <li>
+        <b>Functional Requirements</b>
+        <p>Magdagdag ng button na:</p>
+        <p>Show Data Types</p>
+        <p>Kapag pinindot ang button:</p>
+        <ul>
+          <li>I-display sa webpage ang data types ng lahat ng variables.</li>
+          <li>I-display ang results sa Console.</li>
+          <li>Ipakita kung Array o hindi ang programmingLanguages.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Hint: Maaari mong gamitin ang addEventListener() at textContent.</p>
+    <p>
+      Huwag munang maghanap ng solution. Subukan mong buuin ito gamit ang
+      examples at concepts na natutuhan mo.
+    </p>
+
+    <!-- Challenge Code -->
+    <h4><b>Code:</b></h4>
+    <pre id="code-details">
+      <h3><b>Coding Challenge</b></h3>
+      <p>File: challenge.html</p>
+
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+        &lt;title&gt;JavaScript Challenge Coding&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+
+        &lt;h1&gt;Developer Data Type Information System &lt;/h1&gt;
+
+        &lt;p&gt;Developer &lt;/p&gt;
+
+        &lt;p id="name"&gt;&lt;/p&gt;
+        &lt;p id="age"&gt;&lt;/p&gt;
+        &lt;p id="country"&gt;&lt;/p&gt;
+        &lt;p id="career"&gt;&lt;/p&gt;
+        &lt;p id="skill-level"&gt;&lt;/p&gt;
+
+        &lt;script&gt;
+          // String variables
+          let developerName7 = "Tanzki";
+          let developerCountry7 = "Philippines";
+          let dreamCareer7 = "To be a Full Stack Web Developer";
+
+          // Number variables
+          let developerAge7 = 35;
+          let yearOfExperience7 = 1;
+
+          // Boolean variables
+          let isLearningJavaScript7 = true;
+          let isFullStackDeveloper7 = false;
+
+          // Undefiened variable
+          let selectedProject7;
+
+          // Null variable
+          const completedProject7 = null;
+
+          // Object
+          const developerProfile7 = {
+            name: "Tanzki",
+            age: 35,
+            country: "Philippines",
+            dreamCareer: "To be a Full Stack Web Developer",
+          };
+
+          // Array
+          const programmingLanguages7 = [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "Java",
+            "Python",
+          ];
+
+          // Display all variable from console.log();
+          console.log("Name: " + developerName7);
+          console.log("Country: " + developerCountry7);
+          console.log("Dream Career: " + dreamCareer7);
+          console.log("Age: " + developerAge7);
+          console.log("Year Of Experience: " + yearOfExperience7);
+          console.log("Is Learning JavaScript: " + isLearningJavaScript7);
+          console.log("Is Full Stack Developer: " + isFullStackDeveloper7);
+          console.log("Selected Project: " + selectedProject7);
+          console.log("Completed Project: " + completedProject7);
+          console.log("Developer Profile: " + developerProfile7);
+          console.log("Programming Languages: " + programmingLanguages7);
+
+          console.log("");
+
+          // Display the data types in the console using typeof
+          console.log("typeof developerName: " + typeof developerName);
+          console.log("typeof developerAge: " + typeof developerAge);
+          console.log(
+            "typeof isLearningJavaScript: " + typeof isLearningJavaScript,
+          );
+          console.log("typeof selectedProject: " + typeof selectedProject);
+
+          // typeof null returns "object", which is a known JavaScript quirk
+          console.log("typeof completedProject: " + typeof completedProject);
+          console.log("typeof developerProfile: " + typeof developerProfile);
+
+          // typeof an array returns "object", so Array.isArray() is used to verify it
+          console.log("typeof programmingLanguages: " + typeof programmingLanguages);
+          console.log("Is programmingLanguages an array? " + Array.isArray(programmingLanguages));
+
+
+        &lt;/script&gt;
+        
+      &lt;/body&gt;
+      &lt;/html&gt;
+      
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
+
+    <h3><b>Output:</b></h3>
+
+    <h1>Developer Data Type Information System</h1>
+
+    <h4>Developer Information</h4>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
+    <p id="dream-career"></p>
+    <p id="years-of-experience"></p>
+    <p id="is-learning-javascript"></p>
+    <p id="full-stack-developer"></p>
+
+    <h4>Data Types</h4>
+    <button id="show-data-types-btn">Show Data Types</button>
+    <pre id="data-types-output"></pre>
+
+    <h4>Object Information</h4>
+    <p id="profile-name"></p>
+    <p id="profile-age"></p>
+    <p id="profile-country"></p>
+    <p id="profile-dream-career"></p>
+
+    <h4>Programming Languages</h4>
+    <p id="language-1"></p>
+    <p id="language-2"></p>
+    <p id="language-3"></p>
+    <p id="language-4"></p>
+
+    <script>
+      // String variables
+      let developerName7 = "Tanzki";
+      let developerCountry7 = "Philippines";
+      let dreamCareer7 = "To be a Full Stack Web Developer";
+
+      // Number variables
+      let developerAge7 = 35;
+      let yearOfExperience7 = 1;
+
+      // Boolean variables
+      let isLearningJavaScript7 = true;
+      let isFullStackDeveloper7 = false;
+
+      // Undefiened variable
+      let selectedProject7;
+
+      // Null variable
+      const completedProject7 = null;
+
+      // Object
+      const developerProfile7 = {
+        name: "Tanzki",
+        age: 35,
+        country: "Philippines",
+        dreamCareer: "To be a Full Stack Web Developer",
+      };
+
+      // Array
+      const programmingLanguages7 = [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Java",
+        "Python",
+      ];
+
+      // Display all variable from console.log();
+      console.log("Name: " + developerName7);
+      console.log("Country: " + developerCountry7);
+      console.log("Dream Career: " + dreamCareer7);
+      console.log("Age: " + developerAge7);
+      console.log("Year Of Experience: " + yearOfExperience7);
+      console.log("Is Learning JavaScript: " + isLearningJavaScript7);
+      console.log("Is Full Stack Developer: " + isFullStackDeveloper7);
+      console.log("Selected Project: " + selectedProject7);
+      console.log("Completed Project: " + completedProject7);
+      console.log("Developer Profile: " + developerProfile7);
+      console.log("Programming Languages: " + programmingLanguages7);
+
+      console.log("");
+
+      // Display the data types in the console using typeof
+      console.log("typeof developerName: " + typeof developerName7);
+      console.log("typeof developerAge: " + typeof developerAge7);
+      console.log(
+        "typeof isLearningJavaScript: " + typeof isLearningJavaScript7,
+      );
+      console.log("typeof selectedProject: " + typeof selectedProject7);
+
+      console.log("");
+
+      // typeof null returns "object", which is a known JavaScript quirk
+      console.log("typeof completedProject: " + typeof completedProject7);
+      console.log("typeof developerProfile: " + typeof developerProfile7);
+
+      console.log("");
+
+      // typeof an array returns "object", so Array.isArray() is used to verify it
+      console.log(
+        "typeof programmingLanguages: " + typeof programmingLanguages7,
+      );
+      console.log(
+        "Is programmingLanguages an array? " +
+          Array.isArray(programmingLanguages7),
+      );
+    </script>
+
+    <hr />
+
+    <pre id="code-details">
+      <h3>Mini Quiz — Lesson 5</h3>
+      <ul>
+        <li>Q1:- B</li>
+        <li>Q2:- A</li>
+        <li>Q3:- B</li>
+        <li>Q4:- B</li>
+        <li>Q5:- C</li>
+        <li>Q6:- A</li>
+        <li>Q7:- B</li>
+      </ul>
+    </pre>
+    <!-- Copy Button -->
+    <button class="copy-btn">Copy</button>
   </body>
 </html>
